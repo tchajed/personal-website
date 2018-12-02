@@ -9,7 +9,7 @@ a:visited {
 body {
     margin: 40px auto;
     max-width: 800px;
-    line-height: 1.6;
+    line-height: 1.5;
     font-size: 16px;
     color: #333;
     padding: 0 10px;
@@ -20,16 +20,20 @@ h1, h2, h3 {
     line-height: 1.2
 }
 
+.email {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
 .container {
     display: flex;
     width: 100%;
 }
 .intro {
     align-items: top;
-    text-align: justify;
 }
 .bio, .portrait {
-    padding-right: 2em;
+    padding-right: 1em;
 }
 
 .pub-header {
@@ -48,4 +52,5 @@ h1, h2, h3 {
 }
 .pub-links {
     margin-left: auto;
+    width: 45px;
 }
