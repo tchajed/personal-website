@@ -1,0 +1,21 @@
+<div class="pub">
+  <div class="pub-header container">
+    <div>
+      <span class="pub-title">
+        <a href="papers/{{key}}.pdf">{{title}}</a>
+      </span>
+      &nbsp; (<abbr title="{{conference.fullname}}">{{conference.short}}</abbr>)
+    </div>
+    <div class="pub-links">
+      <a href="papers/{{key}}.pdf">
+        <img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16px" width="16px" />
+      </a>
+      {{#slides}}
+        <a href="papers/{{key}}-slides.pdf">
+          <img title="Slides" alt="slides icon" src="assets/slides.svg" height="16px" width="16px" />
+        </a>
+      {{/slides}}
+    </div>
+  </div>
+  {{{authors}}}
+</div>

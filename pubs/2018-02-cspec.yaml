@@ -1,0 +1,8 @@
+key: cspec:osdi2018
+title: Verifying concurrent software using movers in CSPEC
+conference:
+  fullname: USENIX Symposium on Operating System Design and Implementation (OSDI 2018)
+  short: OSDI 2018
+slides: true
+authors: |
+  <span class="self-author">Tej Chajed</span>, M. Frans Kaashoek, Butler Lampson, and Nickolai Zeldovich
