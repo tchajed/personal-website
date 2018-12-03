@@ -2,20 +2,20 @@
   <div class="pub-header container">
     <div>
       <span class="pub-title">
-        <a href="papers/{{key}}.pdf">{{title}}</a>
+        <a href="papers/{{.Params.Key}}.pdf">{{.Title}}</a>
       </span>
-      &nbsp; (<abbr title="{{conference.fullname}}">{{conference.short}}</abbr>)
+      &nbsp; (<abbr title="{{.Params.Conference.Fullname}}">{{.Params.Conference.Short}}</abbr>)
     </div>
     <div class="pub-links">
-      <a href="papers/{{key}}.pdf">
+      <a href="papers/{{.Params.Key}}.pdf">
         <img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" />
       </a>
-      {{#slides}}
-        <a href="papers/{{key}}-slides.pdf">
+      {{if .Params.Slides }}
+        <a href="papers/{{.Params.Key}}-slides.pdf">
           <img title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" />
         </a>
-      {{/slides}}
+        {{end}}
     </div>
   </div>
-  {{{authors}}}
+  {{ delimit .Params.Authors ", " ", and " | safeHTML }}
 </div>

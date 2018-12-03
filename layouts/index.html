@@ -41,6 +41,5 @@
     {{ range ((.Site.RegularPages.ByParam "Order").ByParam "Year").Reverse }}
     {{ partial "pub" . }}
     {{ end }}
-
   </body>
 </html>
