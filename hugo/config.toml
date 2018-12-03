@@ -1,0 +1,4 @@
+baseURL = "https://chajed.io/"
+languageCode = "en-us"
+title = "Tej Chajed"
+publishdir = "docs"

@@ -1,0 +1,10 @@
+---
+key:
+title:
+conference:
+  fullname:
+  short:
+authors:
+date:
+weight:
+---

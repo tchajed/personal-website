@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tej Chajed</title>
+    {{ $style := resources.Get "styles/main.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  </head>
+
+  <body>
+    <h1>Tej Chajed</h1>
+    <span class="email">tchajed@mit.edu</span>
+    <div class="intro container">
+      <div class="bio">
+        <p>
+          Hello! I'm Tej Chajed, a fifth-year PhD student in <a href="https://pdos.csail.mit.edu/">PDOS</a> at MIT CSAIL,
+          advised by Frans Kaashoek and Nickolai Zeldovich. I work on
+          formal verification of systems - I implement systems and prove
+          that they're correct.</p>
+
+        <p>Before coming to MIT I was at UIUC, where I got undergraduate degrees
+          in Electrical Engineering and Computer Science.</p>
+      </div>
+      <img class="portrait" alt="Tej Chajed picture" src="assets/portrait.png" width=300 height=300 />
+    </div>
+
+    <h2>Research</h2>
+    <p>In my research I develop new techniques for writing verified systems
+    software. For each system, we use the Coq proof assistant to write a
+    specification, implement the system, and write a machine-checked proof that
+    the implementation meets the specification. Every system is also an
+    exploration in new techniques for systems verification. My work so far has
+    centered around a theme of storage systems, especially work on the FSCQ
+    verified file system, and on concurrency.</p>
+
+    <p>I do a lot of work on Coq-related things, including maintaining a <a
+    href="https://github.com/tchajed/coq-tricks">list of Coq tricks</a> for the
+    advanced user.</p>
+
+    <h2>Publications</h2>
+    {{ range ((.Site.RegularPages.ByParam "Order").ByParam "Year").Reverse }}
+    {{ partial "pub" . }}
+    {{ end }}
+
+  </body>
+</html>
