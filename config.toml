@@ -1,4 +1,4 @@
-baseURL = "https://chajed.io/"
+baseURL = "https://www.chajed.io/"
 languageCode = "en-us"
 title = "Tej Chajed"
 publishdir = "docs"

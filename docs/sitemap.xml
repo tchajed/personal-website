@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chajed.io/categories/</loc>
+    <loc>https://www.chajed.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chajed.io/pubs/2017-01-fscq-cacm/</loc>
+    <loc>https://www.chajed.io/pubs/2017-01-fscq-cacm/</loc>
   </url>
   
   <url>
-    <loc>https://chajed.io/pubs/2017-02-cfscq-sosp-src/</loc>
+    <loc>https://www.chajed.io/pubs/2017-02-cfscq-sosp-src/</loc>
   </url>
   
   <url>
-    <loc>https://chajed.io/pubs/2018-01-disksec/</loc>
+    <loc>https://www.chajed.io/pubs/2018-01-disksec/</loc>
   </url>
   
   <url>
-    <loc>https://chajed.io/pubs/</loc>
+    <loc>https://www.chajed.io/pubs/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chajed.io/tags/</loc>
+    <loc>https://www.chajed.io/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chajed.io/</loc>
+    <loc>https://www.chajed.io/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chajed.io/pubs/2015-fscq-sosp/</loc>
+    <loc>https://www.chajed.io/pubs/2015-fscq-sosp/</loc>
   </url>
   
   <url>
-    <loc>https://chajed.io/pubs/2017-03-dfscq/</loc>
+    <loc>https://www.chajed.io/pubs/2017-03-dfscq/</loc>
   </url>
   
   <url>
-    <loc>https://chajed.io/pubs/2018-02-cspec/</loc>
+    <loc>https://www.chajed.io/pubs/2018-02-cspec/</loc>
   </url>
   
 </urlset>
