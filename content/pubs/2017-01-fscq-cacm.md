@@ -1,6 +1,6 @@
 ---
 key: fscq:cacm2017
-title: "Certifying a file system using Crash Hoare Logic: Correctness in the presence of crashes"
+title: "Certifying a file system using Crash Hoare Logic:<br /> Correctness in the presence of crashes"
 conference:
   fullname: Communications of the ACM
   short: CACM 2017

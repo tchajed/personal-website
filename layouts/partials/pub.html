@@ -3,12 +3,15 @@
     <div>
       <span class="pub-title">
           {{if .Params.Key}}
-        <a href="papers/{{.Params.Key}}.pdf">{{.Title}}</a>
+        <a href="papers/{{.Params.Key}}.pdf">{{safeHTML .Title}}</a>
         {{else}}
         {{.Title}}
         {{end}}
       </span>
-      &nbsp; ({{if .Params.Conference.ToAppear}}to appear in {{end}}<abbr title="{{.Params.Conference.Fullname}}">{{.Params.Conference.Short}}</abbr>)
+      &nbsp;
+      <span class="pub-conference">
+          ({{if .Params.Conference.ToAppear}}to appear in {{end}}<abbr title="{{.Params.Conference.Fullname}}">{{.Params.Conference.Short}}</abbr>)
+      </span>
     </div>
     <div class="pub-links">
       {{if .Params.Key}}
