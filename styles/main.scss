@@ -1,4 +1,7 @@
 $blue: #0051c9;
+@mixin larger {
+    font-size: 1.17em;
+}
 
 a {
     text-decoration: none;
@@ -15,7 +18,7 @@ body {
     font-size: 16px;
     color: #333;
     padding: 0 10px;
-    font-family: Open Sans, Arial;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3 {
@@ -23,8 +26,7 @@ h1, h2, h3 {
 }
 
 .email {
-    font-size: 1.17em;
-    font-weight: bold;
+    @include larger;
 }
 
 .container {
@@ -42,8 +44,7 @@ h1, h2, h3 {
     align-items: baseline;
 }
 .pub-title {
-    font-size: 1.17em;
-    font-weight: bold;
+    @include larger;
 }
 .pub {
     padding-bottom: 1em;
@@ -53,7 +54,7 @@ h1, h2, h3 {
 }
 
 .self-author {
-    font-weight: bold;
+    font-weight: 600;
 }
 .pub-links {
     margin-left: auto;

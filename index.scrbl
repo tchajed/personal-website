@@ -20,7 +20,7 @@
   @named-meta["viewport"]{width=device-width, initial-scale=1.0}
   @link[rel: "canonical" href: "https://www.chajed.io"]
   @link[rel: "stylesheet" href: "assets/main.css"]
-  @link[rel: "stylesheet" type: "text/css" href: "https://fonts.googleapis.com/css?family=Open+Sans"]
+  @link[rel: "stylesheet" href: "https://fonts.googleapis.com/css?family=Open+Sans:400,600"]
   @literal{
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130703705-1"></script>
    <script>
