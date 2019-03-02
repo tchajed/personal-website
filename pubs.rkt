@@ -153,5 +153,12 @@
                   #:title "Using Crash Hoare Logic for certifying the FSCQ file system"
                   #:conference (sosp 2015)
                   #:authors (list haogang "Daniel Ziegler" tej adam frans nickolai))
+          (mk-pub "amber:hotos2015"
+                  #:title "Amber: Decoupling user data from web applications"
+                  #:conference (mk-conference
+                                "Workshop on Hot Topics in Operating Systems"
+                                "HotOS 2015")
+                  #:authors (list tej "Jon Gjengset" "Jelle van den Hooff"
+                                  frans "James Mickens" "Robert Morris" nickolai))
           )])
     (map publication pub-list)))
