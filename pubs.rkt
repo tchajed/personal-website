@@ -5,9 +5,10 @@
 
 ;; Publication data representations
 
-(define (mk-conference fullname short)
+(define (mk-conference fullname short #:to-appear? [to-appear? #f])
   (make-immutable-hash `((fullname . ,(format "~a (~a)" fullname short))
-                         (short . ,short))))
+                         (short . ,short)
+                         (to-appear? . ,to-appear?))))
 
 (define (mk-pub
          key
@@ -22,13 +23,21 @@
      (slides? . ,slides?)
      (authors . ,authors))))
 
+(define (pub-published? pub)
+  (not (hash-ref (hash-ref pub 'conference) 'to-appear?)))
+
 ;; HTML formatting for publications
 
 (define (pub-conference conference)
   (let* ([fullname (hash-ref conference 'fullname)]
          [short (hash-ref conference 'short)]
+         [to-appear? (hash-ref conference 'to-appear?)]
          [abbrv-conf (@abbr['title: fullname]{@short})])
-    @span['class: "pub-conference"]{@abbrv-conf}))
+    @span['class: "pub-conference"]{
+ (@(if to-appear?
+      @list{conditionally accepted to @abbrv-conf}
+      abbrv-conf))
+ }))
 
 (define (pub-title pub)
   (define key (hash-ref pub 'key))
@@ -36,7 +45,9 @@
   (define conference (hash-ref pub 'conference))
   @div{
  @span['class: "pub-title"]{
-  @a['href: @~a{papers/@|key|.pdf}]{@title}
+  @(if (pub-published? pub)
+       @a['href: @~a{papers/@|key|.pdf}]{@title}
+       title)
  }
  @nbsp
  @pub-conference[(hash-ref pub 'conference)]
@@ -47,17 +58,18 @@
 
 (define (pub-links pub)
   (define key (hash-ref pub 'key))
-  @div['class: "pub-links"]{
- @a['href: @~a{papers/@|key|.pdf}]{
-  @img['title: "Paper PDF" 'alt: "paper icon"
-       'src: "assets/file.svg" 'height: 16 'width: 16]
- }
- @ifdef[(hash-ref pub 'slides?)]{
-  @a['href: @~a{papers/@|key|-slides.pdf}]{
-   @img['title: "Slides" 'alt: "slides icon"
-        'src: "assets/slides.svg" 'height: 16 'width: 16]
- }}
- })
+  @ifdef[(pub-published? pub)]{
+ @div['class: "pub-links"]{
+  @a['href: @~a{papers/@|key|.pdf}]{
+   @img['title: "Paper PDF" 'alt: "paper icon"
+        'src: "assets/file.svg" 'height: 16 'width: 16]
+  }
+  @ifdef[(hash-ref pub 'slides?)]{
+   @a['href: @~a{papers/@|key|-slides.pdf}]{
+    @img['title: "Slides" 'alt: "slides icon"
+         'src: "assets/slides.svg" 'height: 16 'width: 16]
+  }}
+  }})
 
 (define (pub-authors pub)
   (add-between (hash-ref pub 'authors) ", " #:before-last ", and "))
@@ -85,11 +97,11 @@
           Principles}])
     (mk-conference fullname short)))
 
-(define (pldi year)
+(define (pldi year #:to-appear? [to-appear? #f])
   (let ([short @~a{PLDI @year}]
-        [fullname @{SIGPLAN Conference on Programming Language @;
+        [fullname @~a{SIGPLAN Conference on Programming Language @;
           Design and Implementation}])
-    (mk-conference fullname short)))
+    (mk-conference fullname short #:to-appear? to-appear?)))
 
 (define tej @span['class: "self-author"]{Tej Chajed})
 (define atalay "Atalay İleri")
@@ -103,6 +115,10 @@
 (define (pubs)
   (let ([pub-list
          (list
+          (mk-pub "argosy:pldi2019"
+                  #:title "Argosy: Verifying layered storage systems with recovery refinement"
+                  #:conference (pldi 2019 #:to-appear? #t)
+                  #:authors (list tej joe frans nickolai))
           (mk-pub "cspec:osdi2018"
                   #:title "Verifying concurrent software using movers in CSPEC"
                   #:conference (osdi 2018)
