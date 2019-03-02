@@ -35,8 +35,8 @@
          [abbrv-conf (@abbr['title: fullname]{@short})])
     @span['class: "pub-conference"]{
  (@(if to-appear?
-      @list{conditionally accepted to @abbrv-conf}
-      abbrv-conf))
+       @list{conditionally accepted to @abbrv-conf}
+       abbrv-conf))
  }))
 
 (define (pub-title pub)
@@ -138,11 +138,13 @@
           (mk-pub "cfscq:sosp2017-src"
                   #:title "Extending a verified file system with concurrency"
                   #:conference (mk-conference
-                                "Student Research Competition at ACM Symposium on Operating System Principles"
+                                @list{Student Research Competition at ACM Symposium on@;
+          Operating System Principles}
                                 "SOSP 2017 SRC")
                   #:authors (list tej adam frans nickolai))
           (mk-pub "fscq:cacm2017"
-                  #:title @list{Certifying a file system using Crash Hoare Logic:@br Correctness in the presence of crashes}
+                  #:title @list{Certifying a file system using Crash Hoare Logic:@br
+          Correctness in the presence of crashes}
                   #:conference (mk-conference
                                 "Communications of the ACM"
                                 "CACM 2017")

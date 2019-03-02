@@ -40,7 +40,7 @@
     @p{Hello! I'm Tej Chajed, a fifth-year PhD student in
      @a[href: "https://pdos.csail.mit.edu/"]{PDOS} at MIT CSAIL, advised by Frans
      Kaashoek and Nickolai Zeldovich. I work on formal verification of
-     systems - I implement systems and prove that they're correct.}
+     systems @entity['mdash] I implement systems and prove that they're correct.}
     @p{Before coming to MIT I was at UIUC, where I got undergraduate degrees
      in Electrical Engineering and Computer Science.}
    }
