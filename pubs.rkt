@@ -5,82 +5,74 @@
 
 ;; Publication data representations
 
-(define (mk-conference fullname short #:to-appear? [to-appear? #f])
-  (make-immutable-hash `((fullname . ,(format "~a (~a)" fullname short))
-                         (short . ,short)
-                         (to-appear? . ,to-appear?))))
+(struct conf (fullname short to-appear?))
+(define (mk-conference name short #:to-appear? [to-appear? #f])
+  (conf (format "~a (~a)" name short) short to-appear?))
 
+(struct pub (key title conference slides? authors)
+  #:constructor-name mk-publication)
 (define (mk-pub
          key
          #:title title
          #:conference conference
          #:slides? [slides? #f]
          #:authors authors)
-  (make-immutable-hash
-   `((key . ,key)
-     (title . ,title)
-     (conference . ,conference)
-     (slides? . ,slides?)
-     (authors . ,authors))))
-
+  (mk-publication key title conference slides? authors))
 (define (pub-published? pub)
-  (not (hash-ref (hash-ref pub 'conference) 'to-appear?)))
+  (not (conf-to-appear? (pub-conference pub))))
 
 ;; HTML formatting for publications
 
-(define (pub-conference conference)
-  (let* ([fullname (hash-ref conference 'fullname)]
-         [short (hash-ref conference 'short)]
-         [to-appear? (hash-ref conference 'to-appear?)]
-         [abbrv-conf (@abbr['title: fullname]{@short})])
+(define (html/conf conference)
+  (let* ([short (conf-short conference)]
+         [abbrv-conf (@abbr['title: (conf-fullname conference)]{@short})])
     @span['class: "pub-conference"]{
- (@(if to-appear?
+ (@(if (conf-to-appear? conference)
        @list{conditionally accepted to @abbrv-conf}
        abbrv-conf))
  }))
 
-(define (pub-title pub)
-  (define key (hash-ref pub 'key))
-  (define title (hash-ref pub 'title))
-  (define conference (hash-ref pub 'conference))
-  @div{
+(define (html/pub-title pub)
+  (let ([key (pub-key pub)]
+        [title (pub-title pub)])
+    @div{
  @span['class: "pub-title"]{
   @(if (pub-published? pub)
        @a['href: @~a{papers/@|key|.pdf}]{@title}
        title)
  }
  @nbsp
- @pub-conference[(hash-ref pub 'conference)]
- })
+ @html/conf[(pub-conference pub)]
+ }))
 
 (define (ifdef cond . body)
   (if cond body ""))
 
-(define (pub-links pub)
-  (define key (hash-ref pub 'key))
-  @ifdef[(pub-published? pub)]{
+(define (html/pub-links pub)
+  (let ([key (pub-key pub)])
+    @ifdef[(pub-published? pub)]{
  @div['class: "pub-links"]{
   @a['href: @~a{papers/@|key|.pdf}]{
    @img['title: "Paper PDF" 'alt: "paper icon"
         'src: "assets/file.svg" 'height: 16 'width: 16]
   }
-  @ifdef[(hash-ref pub 'slides?)]{
+  @ifdef[(pub-slides? pub)]{
    @a['href: @~a{papers/@|key|-slides.pdf}]{
     @img['title: "Slides" 'alt: "slides icon"
          'src: "assets/slides.svg" 'height: 16 'width: 16]
   }}
-  }})
+  }}))
 
-(define (pub-authors pub)
-  (add-between (hash-ref pub 'authors) ", " #:before-last ", and "))
+(define (html/authors pub)
+  (add-between (pub-authors pub) ", " #:before-last ", and "))
 
-(define (publication pub)
+(define (html/pub pub)
   @div['class: "pub"]{
  @div['class: "pub-header container"]{
-  @pub-title[pub]
-  @pub-links[pub]
+  @html/pub-title[pub]
+  @html/pub-links[pub]
  }
- @(pub-authors pub)
+ @html/authors[pub]
  })
 
 ;; The publication list
@@ -162,4 +154,4 @@
                    #:authors (list tej "Jon Gjengset" "Jelle van den Hooff"
                                    frans "James Mickens" "Robert Morris" nickolai))
            )])
-    (map publication pub-list)))
+    (map html/pub pub-list)))
