@@ -5,18 +5,27 @@
 
 ;; Publication data representations
 
-(struct conf (fullname short to-appear?))
-(define (mk-conference name short #:to-appear? [to-appear? #f])
+(struct conf  (fullname short to-appear?))
+(define/contract (mk-conference name short #:to-appear? [to-appear? #f])
+  (->* (any/c string?)
+       (#:to-appear? boolean?)
+       conf?)
   (conf (format "~a (~a)" name short) short to-appear?))
 
 (struct pub (key title conference slides? authors)
   #:constructor-name mk-publication)
-(define (mk-pub
-         key
-         #:title title
-         #:conference conference
-         #:slides? [slides? #f]
-         #:authors authors)
+(define/contract (mk-pub
+                  key
+                  #:title title
+                  #:conference conference
+                  #:slides? [slides? #f]
+                  #:authors authors)
+  (->* (string?
+        #:title any/c
+        #:conference conf?
+        #:authors (listof any/c))
+       (#:slides? boolean?)
+       pub?)
   (mk-publication key title conference slides? authors))
 (define (pub-published? pub)
   (not (conf-to-appear? (pub-conference pub))))
@@ -24,6 +33,7 @@
 ;; HTML formatting for publications
 
 (define (html/conf conference)
+  (-> conf? any/c)
   (let* ([short (conf-short conference)]
          [abbrv-conf (@abbr[title: (conf-fullname conference)]{@short})])
     @span[class: "pub-conference"]{
@@ -32,7 +42,8 @@
        abbrv-conf))
  }))
 
-(define (html/pub-title pub)
+(define/contract (html/pub-title pub)
+  (-> pub? any/c)
   (let ([key (pub-key pub)]
         [title (pub-title pub)])
     @div{
@@ -48,7 +59,8 @@
 (define (ifdef cond . body)
   (if cond body ""))
 
-(define (html/pub-links pub)
+(define/contract (html/pub-links pub)
+  (-> pub? any/c)
   (let ([key (pub-key pub)])
     @ifdef[(pub-published? pub)]{
  @div[class: "pub-links"]{
@@ -63,10 +75,12 @@
   }}
   }}))
 
-(define (html/authors pub)
+(define/contract (html/authors pub)
+  (-> pub? any/c)
   (add-between (pub-authors pub) ", " #:before-last ", and "))
 
-(define (html/pub pub)
+(define/contract (html/pub pub)
+  (-> pub? any/c)
   @div[class: "pub"]{
  @div[class: "pub-header container"]{
   @html/pub-title[pub]
