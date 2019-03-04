@@ -83,82 +83,83 @@
  @(pub-authors pub)
  })
 
-;; The data for the publication list
-
-(define (osdi year)
-  (let ([short @~a{OSDI @year}]
-        [fullname @~a{USENIX Symposium on Operating System @;
-          Design and Implementation}])
-    (mk-conference fullname short)))
-
-(define (sosp year)
-  (let ([short @~a{SOSP @year}]
-        [fullname @~a{ACM Symposium on Operating System @;
-          Principles}])
-    (mk-conference fullname short)))
-
-(define (pldi year #:to-appear? [to-appear? #f])
-  (let ([short @~a{PLDI @year}]
-        [fullname @~a{SIGPLAN Conference on Programming Language @;
-          Design and Implementation}])
-    (mk-conference fullname short #:to-appear? to-appear?)))
-
-(define tej @span['class: "self-author"]{Tej Chajed})
-(define atalay "Atalay İleri")
-(define joe "Joseph Tassarotti")
-(define adam "Adam Chlipala")
-(define haogang "Haogang Chen")
-(define frans "M. Frans Kaashoek")
-(define nickolai "Nickolai Zeldovich")
+;; The publication list
 
 (provide pubs)
 (define (pubs)
-  (let ([pub-list
-         (list
-          (mk-pub "argosy:pldi2019"
-                  #:title "Argosy: Verifying layered storage systems with recovery refinement"
-                  #:conference (pldi 2019 #:to-appear? #t)
-                  #:authors (list tej joe frans nickolai))
-          (mk-pub "cspec:osdi2018"
-                  #:title "Verifying concurrent software using movers in CSPEC"
-                  #:conference (osdi 2018)
-                  #:slides? #t
-                  #:authors (list tej frans "Butler Lampson" nickolai))
-          (mk-pub "disksec:osdi2018"
-                  #:title "Proving confidentiality in a file system using DiskSec"
-                  #:conference (osdi 2018)
-                  #:authors (list atalay tej adam frans nickolai))
-          (mk-pub "dfscq:sosp2017"
-                  #:title @list{Verifying a high-performance crash-safe file system@br @;
-          using a tree specification}
-                  #:slides? #t
-                  #:conference (sosp 2017)
-                  #:authors (list "Haogang Chen" tej "Alex Konradi" "Stephanie Wang" atalay
-                                  adam frans nickolai))
-          (mk-pub "cfscq:sosp2017-src"
-                  #:title "Extending a verified file system with concurrency"
-                  #:conference (mk-conference
-                                @list{Student Research Competition at ACM Symposium on@;
-          Operating System Principles}
-                                "SOSP 2017 SRC")
-                  #:authors (list tej adam frans nickolai))
-          (mk-pub "fscq:cacm2017"
-                  #:title @list{Certifying a file system using Crash Hoare Logic:@br
-          Correctness in the presence of crashes}
-                  #:conference (mk-conference
-                                "Communications of the ACM"
-                                "CACM 2017")
-                  #:authors (list tej haogang adam frans nickolai "Daniel Ziegler"))
-          (mk-pub "fscq:sosp2015"
-                  #:title "Using Crash Hoare Logic for certifying the FSCQ file system"
-                  #:conference (sosp 2015)
-                  #:authors (list haogang "Daniel Ziegler" tej adam frans nickolai))
-          (mk-pub "amber:hotos2015"
-                  #:title "Amber: Decoupling user data from web applications"
-                  #:conference (mk-conference
-                                "Workshop on Hot Topics in Operating Systems"
-                                "HotOS 2015")
-                  #:authors (list tej "Jon Gjengset" "Jelle van den Hooff"
-                                  frans "James Mickens" "Robert Morris" nickolai))
-          )])
+  ;; local data to define publication list
+  (define (osdi year)
+    (let ([short @~a{OSDI @year}]
+          [fullname @~a{USENIX Symposium on Operating System @;
+            Design and Implementation}])
+      (mk-conference fullname short)))
+
+  (define (sosp year)
+    (let ([short @~a{SOSP @year}]
+          [fullname @~a{ACM Symposium on Operating System @;
+            Principles}])
+      (mk-conference fullname short)))
+
+  (define (pldi year #:to-appear? [to-appear? #f])
+    (let ([short @~a{PLDI @year}]
+          [fullname @~a{SIGPLAN Conference on Programming Language @;
+            Design and Implementation}])
+      (mk-conference fullname short #:to-appear? to-appear?)))
+
+  (let* ([tej @span['class: "self-author"]{Tej Chajed}]
+         [atalay "Atalay İleri"]
+         [joe "Joseph Tassarotti"]
+         [adam "Adam Chlipala"]
+         [haogang "Haogang Chen"]
+         [frans "M. Frans Kaashoek"]
+         [nickolai "Nickolai Zeldovich"]
+
+         [pub-list
+          (list
+           (mk-pub "argosy:pldi2019"
+                   #:title "Argosy: Verifying layered storage systems with recovery refinement"
+                   #:conference (pldi 2019 #:to-appear? #t)
+                   #:authors (list tej joe frans nickolai))
+           (mk-pub "cspec:osdi2018"
+                   #:title "Verifying concurrent software using movers in CSPEC"
+                   #:conference (osdi 2018)
+                   #:slides? #t
+                   #:authors (list tej frans "Butler Lampson" nickolai))
+           (mk-pub "disksec:osdi2018"
+                   #:title "Proving confidentiality in a file system using DiskSec"
+                   #:conference (osdi 2018)
+                   #:authors (list atalay tej adam frans nickolai))
+           (mk-pub "dfscq:sosp2017"
+                   #:title @list{Verifying a high-performance crash-safe file system@br @;
+           using a tree specification}
+                   #:slides? #t
+                   #:conference (sosp 2017)
+                   #:authors (list "Haogang Chen" tej "Alex Konradi" "Stephanie Wang" atalay
+                                   adam frans nickolai))
+           (mk-pub "cfscq:sosp2017-src"
+                   #:title "Extending a verified file system with concurrency"
+                   #:conference (mk-conference
+                                 @list{Student Research Competition at ACM Symposium on@;
+           Operating System Principles}
+                                 "SOSP 2017 SRC")
+                   #:authors (list tej adam frans nickolai))
+           (mk-pub "fscq:cacm2017"
+                   #:title @list{Certifying a file system using Crash Hoare Logic:@br
+           Correctness in the presence of crashes}
+                   #:conference (mk-conference
+                                 "Communications of the ACM"
+                                 "CACM 2017")
+                   #:authors (list tej haogang adam frans nickolai "Daniel Ziegler"))
+           (mk-pub "fscq:sosp2015"
+                   #:title "Using Crash Hoare Logic for certifying the FSCQ file system"
+                   #:conference (sosp 2015)
+                   #:authors (list haogang "Daniel Ziegler" tej adam frans nickolai))
+           (mk-pub "amber:hotos2015"
+                   #:title "Amber: Decoupling user data from web applications"
+                   #:conference (mk-conference
+                                 "Workshop on Hot Topics in Operating Systems"
+                                 "HotOS 2015")
+                   #:authors (list tej "Jon Gjengset" "Jelle van den Hooff"
+                                   frans "James Mickens" "Robert Morris" nickolai))
+           )])
     (map publication pub-list)))
