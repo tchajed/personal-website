@@ -1,6 +1,6 @@
 #lang at-exp racket
 
-(require scribble/html/html)
+(require scribble/html)
 (require racket/format)
 
 ;; Publication data representations
@@ -25,8 +25,8 @@
 
 (define (html/conf conference)
   (let* ([short (conf-short conference)]
-         [abbrv-conf (@abbr['title: (conf-fullname conference)]{@short})])
-    @span['class: "pub-conference"]{
+         [abbrv-conf (@abbr[title: (conf-fullname conference)]{@short})])
+    @span[class: "pub-conference"]{
  (@(if (conf-to-appear? conference)
        @list{conditionally accepted to @abbrv-conf}
        abbrv-conf))
@@ -36,9 +36,9 @@
   (let ([key (pub-key pub)]
         [title (pub-title pub)])
     @div{
- @span['class: "pub-title"]{
+ @span[class: "pub-title"]{
   @(if (pub-published? pub)
-       @a['href: @~a{papers/@|key|.pdf}]{@title}
+       @a[href: @~a{papers/@|key|.pdf}]{@title}
        title)
  }
  @nbsp
@@ -51,15 +51,15 @@
 (define (html/pub-links pub)
   (let ([key (pub-key pub)])
     @ifdef[(pub-published? pub)]{
- @div['class: "pub-links"]{
-  @a['href: @~a{papers/@|key|.pdf}]{
-   @img['title: "Paper PDF" 'alt: "paper icon"
-        'src: "assets/file.svg" 'height: 16 'width: 16]
+ @div[class: "pub-links"]{
+  @a[href: @~a{papers/@|key|.pdf}]{
+   @img[title: "Paper PDF" 'alt: "paper icon"
+        src: "assets/file.svg" 'height: 16 'width: 16]
   }
   @ifdef[(pub-slides? pub)]{
-   @a['href: @~a{papers/@|key|-slides.pdf}]{
-    @img['title: "Slides" 'alt: "slides icon"
-         'src: "assets/slides.svg" 'height: 16 'width: 16]
+   @a[href: @~a{papers/@|key|-slides.pdf}]{
+    @img[title: "Slides" 'alt: "slides icon"
+         src: "assets/slides.svg" 'height: 16 'width: 16]
   }}
   }}))
 
@@ -67,8 +67,8 @@
   (add-between (pub-authors pub) ", " #:before-last ", and "))
 
 (define (html/pub pub)
-  @div['class: "pub"]{
- @div['class: "pub-header container"]{
+  @div[class: "pub"]{
+ @div[class: "pub-header container"]{
   @html/pub-title[pub]
   @html/pub-links[pub]
  }
@@ -98,7 +98,7 @@
             Design and Implementation}])
       (mk-conference fullname short #:to-appear? to-appear?)))
 
-  (let* ([tej @span['class: "self-author"]{Tej Chajed}]
+  (let* ([tej @span[class: "self-author"]{Tej Chajed}]
          [atalay "Atalay İleri"]
          [joe "Joseph Tassarotti"]
          [adam "Adam Chlipala"]
