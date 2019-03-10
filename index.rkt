@@ -68,7 +68,16 @@
 
  @h2{Publications}
  @pubs
- })
+
+ @h3{Hot to pronounce my name}
+ "Tej" rhymes with "page", and Chajed is pronounced as written (CHA-jed).
+ @;{
+ @; if you can read this, you probably already pronounce Tej correctly
+ In Hindi it's तेज छाजेड़.
+ @; this is utterly unhelpful
+ In @a[href: "https://en.wikipedia.org/wiki/Help:IPA/English"]{IPA} the Americanized pronunciation of my name is teɪdʒ tʃɑːdʒɛd.
+ }
+  })
 
 (define doc
   (list @doctype['html]
