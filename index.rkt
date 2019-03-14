@@ -69,7 +69,7 @@
  @h2{Publications}
  @pubs
 
- @h3{Hot to pronounce my name}
+ @h3{How to pronounce my name}
  "Tej" rhymes with "page", and Chajed is pronounced as written (CHA-jed).
  @;{
  @; if you can read this, you probably already pronounce Tej correctly
