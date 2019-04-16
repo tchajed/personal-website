@@ -123,8 +123,8 @@
          [pub-list
           (list
            (mk-pub "argosy:pldi2019"
-                   #:title "Argosy: Verifying layered storage systems with recovery refinement"
-                   #:conference (pldi 2019 #:to-appear? #t)
+                   #:title "Argosy: Verifying Layered Storage Systems with Recovery Refinement"
+                   #:conference (pldi 2019)
                    #:authors (list tej joe frans nickolai))
            (mk-pub "cspec:osdi2018"
                    #:title "Verifying concurrent software using movers in CSPEC"
