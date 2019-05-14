@@ -144,6 +144,7 @@
                                    adam frans nickolai))
            (mk-pub "cfscq:sosp2017-src"
                    #:title "Extending a verified file system with concurrency"
+                   #:slides? #t
                    #:conference (mk-conference
                                  @list{Student Research Competition at ACM Symposium on@;
            Operating System Principles}
