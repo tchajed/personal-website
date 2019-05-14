@@ -42,6 +42,12 @@
        abbrv-conf))
  }))
 
+(define (file-link fname text)
+  (let ([path (build-path "docs" fname)])
+    (unless (file-exists? path)
+      (raise-user-error @~a{attempt to link to non-existent file @path})))
+  (a 'href: fname text))
+
 (define/contract (html/pub-title pub)
   (-> pub? any/c)
   (let ([key (pub-key pub)]
@@ -49,14 +55,14 @@
     @div{
  @span[class: "pub-title"]{
   @(if (pub-published? pub)
-       @a[href: @~a{papers/@|key|.pdf}]{@title}
+       (file-link @~a{papers/@|key|.pdf} title)
        title)
  }
  @nbsp
  @html/conf[(pub-conference pub)]
  }))
 
-(define (ifdef cond . body)
+(define-syntax-rule (ifdef cond . body)
   (if cond body ""))
 
 (define/contract (html/pub-links pub)
@@ -64,12 +70,12 @@
   (let ([key (pub-key pub)])
     @ifdef[(pub-published? pub)]{
  @div[class: "pub-links"]{
-  @a[href: @~a{papers/@|key|.pdf}]{
+  @file-link[@~a{papers/@|key|.pdf}]{
    @img[title: "Paper PDF" 'alt: "paper icon"
         src: "assets/file.svg" 'height: 16 'width: 16]
   }
   @ifdef[(pub-slides? pub)]{
-   @a[href: @~a{papers/@|key|-slides.pdf}]{
+   @file-link[@~a{papers/@|key|-slides.pdf}]{
     @img[title: "Slides" 'alt: "slides icon"
          src: "assets/slides.svg" 'height: 16 'width: 16]
   }}
