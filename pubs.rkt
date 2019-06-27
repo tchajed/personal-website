@@ -112,6 +112,11 @@
             Principles}])
       (mk-conference fullname short)))
 
+  (define (usenix-security year)
+    (let ([short @~a{USENIX Security @year}]
+          [fullname @~a{USENIX Symposium on Security}])
+      (mk-conference fullname short)))
+
   (define (pldi year #:to-appear? [to-appear? #f])
     (let ([short @~a{PLDI @year}]
           [fullname @~a{SIGPLAN Conference on Programming Language @;
@@ -128,6 +133,17 @@
 
          [pub-list
           (list
+           (mk-pub "everparse:usenix-sec2019"
+                   #:title @list{EverParse: Verified Secure Zero-Copy Parsers for@br
+                                            Authenticated Message Formats}
+                   #:conference (usenix-security 2019)
+                   #:authors (list "Tahina Ramananandro"
+                                   "Antoine Delignat-Lavaud"
+                                   "Cédric Fournet"
+                                   "Nikhil Swamy"
+                                   tej
+                                   "Nadim Kobeissi"
+                                   "Jonathan Protzenko"))
            (mk-pub "argosy:pldi2019"
                    #:title "Argosy: Verifying Layered Storage Systems with Recovery Refinement"
                    #:conference (pldi 2019)
