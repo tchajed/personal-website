@@ -38,7 +38,7 @@
          [abbrv-conf (@abbr[title: (conf-fullname conference)]{@short})])
     @span[class: "pub-conference"]{
  (@(if (conf-to-appear? conference)
-       @list{conditionally accepted to @abbrv-conf}
+       @list{to appear at @abbrv-conf}
        abbrv-conf))
  }))
 
