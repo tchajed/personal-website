@@ -100,17 +100,17 @@
 (provide pubs)
 (define (pubs)
   ;; local data to define publication list
-  (define (osdi year)
+  (define (osdi year #:to-appear? (to-appear? #f))
     (let ([short @~a{OSDI @year}]
           [fullname @~a{USENIX Symposium on Operating System @;
             Design and Implementation}])
-      (mk-conference fullname short)))
+      (mk-conference fullname short #:to-appear? to-appear?)))
 
-  (define (sosp year)
+  (define (sosp year #:to-appear? (to-appear? #f))
     (let ([short @~a{SOSP @year}]
           [fullname @~a{ACM Symposium on Operating System @;
             Principles}])
-      (mk-conference fullname short)))
+      (mk-conference fullname short #:to-appear? to-appear?)))
 
   (define (usenix-security year)
     (let ([short @~a{USENIX Security @year}]
@@ -133,6 +133,10 @@
 
          [pub-list
           (list
+           (mk-pub "armada:sosp2019"
+                   #:title "Verifying concurrent storage systems with Armada"
+                   #:conference (sosp 2019 #:to-appear? #t)
+                   #:authors (list tej joe frans nickolai))
            (mk-pub "everparse:usenix-sec2019"
                    #:title @list{EverParse: Verified Secure Zero-Copy Parsers for@br
                                             Authenticated Message Formats}
