@@ -1,7 +1,8 @@
 #lang at-exp racket
 
-(require scribble/html)
 (require racket/format)
+(require syntax/parse/define)
+(require scribble/html)
 
 ;; Publication data representations
 
@@ -62,8 +63,8 @@
  @html/conf[(pub-conference pub)]
  }))
 
-(define-syntax-rule (ifdef cond . body)
-  (if cond body ""))
+(define-simple-macro (ifdef cond:expr body:expr ...)
+  (if cond (list body ...) ""))
 
 (define/contract (html/pub-links pub)
   (-> pub? any/c)
@@ -138,8 +139,8 @@
                    #:conference (sosp 2019 #:to-appear? #t)
                    #:authors (list tej joe frans nickolai))
            (mk-pub "everparse:usenix-sec2019"
-                   #:title @list{EverParse: Verified Secure Zero-Copy Parsers for@br
-                                            Authenticated Message Formats}
+                   #:title @list{EverParse: Verified Secure Zero-Copy Parsers for@br @;
+           Authenticated Message Formats}
                    #:conference (usenix-security 2019)
                    #:authors (list "Tahina Ramananandro"
                                    "Antoine Delignat-Lavaud"
