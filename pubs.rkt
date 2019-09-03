@@ -135,7 +135,7 @@
          [pub-list
           (list
            (mk-pub "armada:sosp2019"
-                   #:title "Verifying concurrent storage systems with Armada"
+                   #:title "Verifying concurrent, crash-safe systems with Perennial"
                    #:conference (sosp 2019 #:to-appear? #t)
                    #:authors (list tej joe frans nickolai))
            (mk-pub "everparse:usenix-sec2019"
