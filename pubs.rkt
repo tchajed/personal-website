@@ -134,7 +134,7 @@
 
          [pub-list
           (list
-           (mk-pub "armada:sosp2019"
+           (mk-pub "perennial:sosp2019"
                    #:title "Verifying concurrent, crash-safe systems with Perennial"
                    #:conference (sosp 2019 #:to-appear? #t)
                    #:authors (list tej joe frans nickolai))
