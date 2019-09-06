@@ -14,7 +14,7 @@
  @title{Tej Chajed}
  @meta[charset: "UTF-8"]
  @named-meta["keywords"]{Tej,Chajed,MIT,computer science}
- @named-meta["description"]{@"I'm Tej Chajed, a fifth-year PhD student in PDOS
+ @named-meta["description"]{@"I'm Tej Chajed, a sixth-year PhD student in PDOS
   at MIT CSAIL working with Frans Kaashoek and Nickolai Zeldovich."}
  @named-meta["author"]{@"Tej Chajed <tchajed@mit.edu>"}
  @named-meta["viewport"]{width=device-width, initial-scale=1.0}
