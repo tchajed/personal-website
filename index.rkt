@@ -41,8 +41,9 @@
    @span[class: "email"]{@|email|}
    @p{Hello! I'm Tej Chajed, a fifth-year PhD student in
     @a[href: "https://pdos.csail.mit.edu/"]{PDOS} at MIT CSAIL, advised by Frans
-    Kaashoek and Nickolai Zeldovich. I work on formal verification of
-    systems @entity['mdash] I implement systems and prove that they're correct.}
+    Kaashoek and Nickolai Zeldovich. I work on formal verification of systems
+    software @entity['mdash] I implement systems and prove they do what they're
+    supposed to.}
    @p{Before coming to MIT I was at UIUC, where I got undergraduate degrees
     in Electrical Engineering and Computer Science.}
   }
@@ -53,14 +54,14 @@
        height: 250]
  }
 
- @h2{Research}
- @p{In my research I develop new techniques for writing verified systems
-  software. For each system, we use the Coq proof assistant to write a
-  specification, implement the system, and write a machine-checked proof that
-  the implementation meets the specification. Every system is also an
-  exploration in new techniques for systems verification. My work so far has
-  centered around a theme of storage systems, especially work on the FSCQ
-  verified file system, and on concurrency.}
+ @h2{Research} @p{Even critical systems software has bugs @entity['mdash] for
+example, file systems have bugs that occasionally lead to users losing data. My
+research aims to write systems software that always does what it's supposed to.
+We've written several verified systems, where we wrote a specification of what
+the system should do, then used the Coq proof assistant to prove that the
+implementation meets the specification. So far my work has centered around a
+theme of storage systems, including a verified file system (FSCQ) and a
+framework that combines concurrency and crash-safety reasoning.}
 
  @p{I do a lot of work on Coq-related things, including maintaining a
   @a[href: "https://github.com/tchajed/coq-tricks"]{list of Coq tricks} for
