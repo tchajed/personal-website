@@ -136,7 +136,7 @@
           (list
            (mk-pub "perennial:sosp2019"
                    #:title "Verifying concurrent, crash-safe systems with Perennial"
-                   #:conference (sosp 2019 #:to-appear? #t)
+                   #:conference (sosp 2019)
                    #:authors (list tej joe frans nickolai))
            (mk-pub "everparse:usenix-sec2019"
                    #:title @list{EverParse: Verified Secure Zero-Copy Parsers for@br @;
