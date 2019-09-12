@@ -125,6 +125,7 @@
       (mk-conference fullname short #:to-appear? to-appear?)))
 
   (let* ([tej @span[class: "self-author"]{Tej Chajed}]
+         [tej-non-bold "Tej Chajed"]
          [atalay "Atalay İleri"]
          [joe "Joseph Tassarotti"]
          [adam "Adam Chlipala"]
@@ -184,7 +185,7 @@
                    #:conference (mk-conference
                                  "Communications of the ACM"
                                  "CACM 2017")
-                   #:authors (list tej haogang adam frans nickolai "Daniel Ziegler"))
+                   #:authors (list tej-non-bold haogang adam frans nickolai "Daniel Ziegler"))
            (mk-pub "fscq:sosp2015"
                    #:title "Using Crash Hoare Logic for certifying the FSCQ file system"
                    #:conference (sosp 2015)
