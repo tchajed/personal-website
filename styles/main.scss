@@ -1,62 +1,65 @@
 $blue: #0051c9;
 @mixin larger {
-    font-size: 1.17em;
+  font-size: 1.17em;
 }
 
 a {
-    text-decoration: none;
-    color: $blue;
+  text-decoration: none;
+  color: $blue;
 }
 a:visited {
-    color: $blue;
+  color: $blue;
 }
 
 body {
-    margin: 40px auto;
-    max-width: 800px;
-    line-height: 1.5;
-    font-size: 16px;
-    color: #333;
-    padding: 0 10px;
-    font-family: 'Open Sans', sans-serif;
+  margin: 40px auto;
+  max-width: 800px;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #333;
+  padding: 0 10px;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3 {
-    line-height: 1.2
+h1,
+h2,
+h3 {
+  line-height: 1.2;
 }
 
 .email {
-    @include larger;
+  @include larger;
 }
 
 .container {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 .intro {
-    align-items: top;
+  align-items: top;
 }
-.bio, .portrait {
-    padding-right: 1em;
+.bio,
+.portrait {
+  padding-right: 1em;
 }
 
 .pub-header {
-    align-items: baseline;
+  align-items: baseline;
 }
 .pub-title {
-    @include larger;
+  @include larger;
 }
 .pub {
-    padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 .pub-conference {
-    display: inline-block;
+  display: inline-block;
 }
 
 .self-author {
-    font-weight: 600;
+  font-weight: 600;
 }
 .pub-links {
-    margin-left: auto;
-    width: 45px;
+  margin-left: auto;
+  width: 45px;
 }

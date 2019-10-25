@@ -12,9 +12,11 @@ body {
   font-size: 16px;
   color: #333;
   padding: 0 10px;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.2; }
 
 .email {
@@ -27,7 +29,8 @@ h1, h2, h3 {
 .intro {
   align-items: top; }
 
-.bio, .portrait {
+.bio,
+.portrait {
   padding-right: 1em; }
 
 .pub-header {
