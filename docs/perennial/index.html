@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+  <title>Verifying concurrent, crash-safe systems with
+  Perennial</title>
+  <link rel="stylesheet" href="../assets/main.css" type="text/css">
+  <script async="" src=
+  "https://www.googletagmanager.com/gtag/js?id=UA-130703705-1"
+  type="text/javascript">
+</script>
+  <script type="text/javascript">
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130703705-1');
+  </script>
+</head>
+
+<body>
+  <h1>Perennial</h1>
+
+  <p>To learn more about Perennial, check out the following
+  sources.</p>
+
+  <h2>SOSP presentation</h2>
+
+  <p>Tej will present Perennial in the first session on Tuesday
+  morning.</p>
+
+  <h2>SOSP paper</h2>
+
+  <p>We have an <a href="../papers/perennial:sosp2019.pdf">SOSP
+  2019 paper</a> describing Perennial's techniques, the Goose
+  translator, and a broad evaluation of several aspects of
+  Perennial's implementation.</p>
+
+  <p>Here's the abstract:</p>
+
+  <blockquote>
+    This paper introduces Perennial, a framework for verifying
+    concurrent, crash-safe systems. Perennial extends the Iris
+    concurrency framework with three techniques to enable
+    crash-safety reasoning: recovery leases, recovery helping, and
+    versioned memory. To ease development and deployment of
+    applications, Perennial provides Goose, a subset of Go and a
+    translator from that subset to a model in Perennial with
+    support for reasoning about Go threads, data structures, and
+    file-system primitives. We implemented and verified a
+    crash-safe, concurrent mail server using Perennial and Goose
+    that achieves speedup on multiple cores. Both Perennial and
+    Iris use the Coq proof assistant, and the mail server and the
+    framework's proofs are machine checked.
+  </blockquote>
+
+  <h2>Perennial source code</h2>
+
+  <p>All of Perennial is open source. The implementation is split
+  into two different repos:</p>
+
+  <ul>
+    <li>The framework and verified examples are at <a href=
+    "https://github.com/mit-pdos/perennial"><tt>https://github.com/mit-pdos/perennial</tt></a></li>
+
+    <li>The Goose translator, which imports Go into Coq for
+    verification with Perennial, is at <a href=
+    "https://github.com/tchajed/goose"><tt>https://github.com/tchajed/goose</tt></a>.
+    The documentation in that repo goes into more detail than the
+    SOSP paper on exactly how the translation works.</li>
+  </ul>
+
+  <h1>Questions you might ask</h1>
+
+  <h2>Why is it called Perennial?</h2>
+
+  <p>Good question! It's because we extend Iris, and irises (the
+  flowers) are perennials, and because perennials recover in the
+  spring.</p>
+
+  <h2>This is cool, how do I work on it?</h2>
+
+  <p>I agree! This work is all based on Iris, a sophisticated and
+  extensible Coq framework for concurrency. Talk to Tej or Joe
+  Tassarotti and we can point you to some resources.</p>
+</body>
+</html>

@@ -19,6 +19,9 @@ h2,
 h3 {
   line-height: 1.2; }
 
+blockquote {
+  background: #f0f0f0; }
+
 .email {
   font-size: 1.17em; }
 
