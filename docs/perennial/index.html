@@ -19,10 +19,11 @@ window.dataLayer = window.dataLayer || [];
 </head>
 
 <body>
-  <h1>Perennial</h1>
+  <h1>Verifying concurrent, crash-safe systems with Perennial</h1>
 
-  <p>To learn more about Perennial, check out the following
-  sources.</p>
+  <p>Here is a <a href=
+  "../papers/perennial:sosp2019-poster.pdf">digital copy of the
+  poster</a>.</p>
 
   <h2>SOSP presentation</h2>
 
@@ -57,24 +58,21 @@ window.dataLayer = window.dataLayer || [];
   <h2>Perennial source code</h2>
 
   <p>All of Perennial is open source. The implementation is split
-  into two different repos:</p>
+  into multiple GitHub repos:</p>
 
   <ul>
     <li>The framework and verified examples are at <a href=
-    "https://github.com/mit-pdos/perennial"><tt>https://github.com/mit-pdos/perennial</tt></a></li>
+    "https://github.com/mit-pdos/perennial"><tt>mit-pdos/perennial</tt></a>.</li>
 
     <li>The Goose translator, which imports Go into Coq for
     verification with Perennial, is at <a href=
-    "https://github.com/tchajed/goose"><tt>https://github.com/tchajed/goose</tt></a>.
+    "https://github.com/tchajed/goose"><tt>tchajed/goose</tt></a>.
     The documentation in that repo goes into more detail than the
     SOSP paper on exactly how the translation works.</li>
+
+    <li>The mail server we verified, Mailboat, is at <a href=
+    "https://github.com/tchajed/mailboat">tchajed/mailboat</a>.</li>
   </ul>
-
-  <h2>Poster</h2>
-
-  <p>You can look at a <a href=
-  "../papers/perennial:sosp2019-poster.pdf">digital copy of the
-  poster</a>.</p>
 
   <h1>Questions you might ask</h1>
 
