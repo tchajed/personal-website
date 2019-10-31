@@ -39,7 +39,7 @@
  @div[class: "intro container"]{
   @div[class: "bio"]{
    @span[class: "email"]{@|email|}
-   @p{Hello! I'm Tej Chajed, a sixth-year PhD student in
+   @p{I'm Tej Chajed, a sixth-year PhD student in
     @a[href: "https://pdos.csail.mit.edu/"]{PDOS} at MIT CSAIL, advised by Frans
     Kaashoek and Nickolai Zeldovich. I work on formal verification of systems
     software @entity['mdash] I implement systems and prove they do what they're
@@ -57,11 +57,13 @@
  @h2{Research} @p{Even critical systems software has bugs @entity['mdash] for
 example, file systems have bugs that occasionally lead to users losing data. My
 research aims to write systems software that always does what it's supposed to.
-We've written several verified systems, where we wrote a specification of what
-the system should do, then used the Coq proof assistant to prove that the
-implementation meets the specification. So far my work has centered around a
-theme of storage systems, including a verified file system (FSCQ) and a
-framework that combines concurrency and crash-safety reasoning.}
+We do this with formal verification: we write a precise specification of what
+the system is supposed to do and prove that the implementation meets the
+specification. These proofs are implemented and checked using a computer with
+the Coq proof assistant, giving us high assurance that the proofs are correct.
+So far my work has centered around a theme of storage systems and concurrency,
+including a verified file system (FSCQ) and a framework that combines
+concurrency and crash-safety reasoning.}
 
  @p{I do a lot of work on Coq-related things, including maintaining a
   @a[href: "https://github.com/tchajed/coq-tricks"]{list of Coq tricks} for
