@@ -47,6 +47,9 @@ blockquote {
 .portrait {
   padding-right: 1em;
 }
+.portrait {
+  flex-shrink: 0;
+}
 
 .pub-header {
   align-items: baseline;
