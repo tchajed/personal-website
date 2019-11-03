@@ -72,6 +72,12 @@ concurrency and crash-safety reasoning.}
  @h2{Publications}
  @pubs
 
+ @h2{Service}
+ @ul{
+     @li{@a[href: "https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation"]{@span[class: "pub-title"]{POPL 2020 AEC}}}
+     @li{@a[href: "https://sysartifacts.github.io/"]{@span[class: "pub-title"]{SOSP 2019 AEC}}}
+     }
+
  @h3{How to pronounce my name}
  "Tej" rhymes with "page", and Chajed is pronounced as written (CHA-jed).
  @;{
