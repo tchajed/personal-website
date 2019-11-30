@@ -5,3 +5,6 @@ docs/assets/main.css: styles/main.scss
 
 docs/index.html: index.rkt pubs.rkt
 	racket $< > $@
+
+serve:
+	http-server docs -a localhost -p 6061 -o
