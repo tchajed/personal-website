@@ -124,6 +124,12 @@
             Design and Implementation}])
       (mk-conference fullname short #:to-appear? to-appear?)))
 
+  (define (coqpl year #:to-appear? [to-appear? #f])
+    (let ([short @~a{CoqPL @year}]
+          [fullname @~a{International Workshop on Coq for @;
+                                        Programming Languages}])
+      (mk-conference fullname short #:to-appear? to-appear?)))
+
   (let* ([tej @span[class: "self-author"]{Tej Chajed}]
          [tej-non-bold "Tej Chajed"]
          [atalay "Atalay İleri"]
@@ -135,6 +141,10 @@
 
          [pub-list
           (list
+           (mk-pub "goose:coqpl2020"
+                   #:title "Verifying concurrent Go code in Coq with Goose"
+                   #:conference (coqpl 2020)
+                   #:authors (list tej joe frans nickolai))
            (mk-pub "perennial:sosp2019"
                    #:title "Verifying concurrent, crash-safe systems with Perennial"
                    #:conference (sosp 2019)
