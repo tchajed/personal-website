@@ -74,6 +74,7 @@ concurrency and crash-safety reasoning.}
 
  @h2{Service}
  @ul{
+     @li{@a[href: "https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts"]{@span[class: "pub-title"]{PLDI 2020 AEC}}}
      @li{@a[href: "https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation"]{@span[class: "pub-title"]{POPL 2020 AEC}}}
      @li{@a[href: "https://sysartifacts.github.io/"]{@span[class: "pub-title"]{SOSP 2019 AEC}}}
      }
