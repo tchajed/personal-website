@@ -144,6 +144,7 @@
            (mk-pub "goose:coqpl2020"
                    #:title "Verifying concurrent Go code in Coq with Goose"
                    #:conference (coqpl 2020)
+                   #:slides? #t
                    #:authors (list tej joe frans nickolai))
            (mk-pub "perennial:sosp2019"
                    #:title "Verifying concurrent, crash-safe systems with Perennial"
