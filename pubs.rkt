@@ -13,21 +13,23 @@
        conf?)
   (conf (format "~a (~a)" name short) short to-appear?))
 
-(struct pub (key title conference slides? authors)
+(struct pub (key title conference slides? video-url authors)
   #:constructor-name mk-publication)
 (define/contract (mk-pub
                   key
                   #:title title
                   #:conference conference
                   #:slides? [slides? #f]
+                  #:video-url [video-url null]
                   #:authors authors)
   (->* (string?
         #:title any/c
         #:conference conf?
         #:authors (listof any/c))
-       (#:slides? boolean?)
+       (#:slides? boolean?
+        #:video-url (or/c string? null))
        pub?)
-  (mk-publication key title conference slides? authors))
+  (mk-publication key title conference slides? video-url authors))
 (define (pub-published? pub)
   (not (conf-to-appear? (pub-conference pub))))
 
@@ -127,7 +129,7 @@
   (define (coqpl year #:to-appear? [to-appear? #f])
     (let ([short @~a{CoqPL @year}]
           [fullname @~a{International Workshop on Coq for @;
-                                        Programming Languages}])
+            Programming Languages}])
       (mk-conference fullname short #:to-appear? to-appear?)))
 
   (let* ([tej @span[class: "self-author"]{Tej Chajed}]
@@ -145,11 +147,13 @@
                    #:title "Verifying concurrent Go code in Coq with Goose"
                    #:conference (coqpl 2020)
                    #:slides? #t
-                   #:authors (list tej joe frans nickolai))
+                   #:authors (list tej joe frans nickolai)
+                   #:video-url "https://www.youtube.com/watch?v=RusKEgQK51c")
            (mk-pub "perennial:sosp2019"
                    #:title "Verifying concurrent, crash-safe systems with Perennial"
                    #:conference (sosp 2019)
                    #:slides? #t
+                   #:video-url "https://sosp19.rcs.uwaterloo.ca/videos/D2-S1-P2.mp4"
                    #:authors (list tej joe frans nickolai))
            (mk-pub "everparse:usenix-sec2019"
                    #:title @list{EverParse: Verified Secure Zero-Copy Parsers for@br @;
@@ -166,12 +170,14 @@
                    #:title "Argosy: Verifying Layered Storage Systems with Recovery Refinement"
                    #:conference (pldi 2019)
                    #:slides? #t
-                   #:authors (list tej joe frans nickolai))
+                   #:authors (list tej joe frans nickolai)
+                   #:video-url "https://www.youtube.com/watch?v=XAYcjPhfxVs&t=2s")
            (mk-pub "cspec:osdi2018"
                    #:title "Verifying concurrent software using movers in CSPEC"
                    #:conference (osdi 2018)
                    #:slides? #t
-                   #:authors (list tej frans "Butler Lampson" nickolai))
+                   #:authors (list tej frans "Butler Lampson" nickolai)
+                   #:video-url "https://www.usenix.org/conference/osdi18/presentation/chajed")
            (mk-pub "disksec:osdi2018"
                    #:title "Proving confidentiality in a file system using DiskSec"
                    #:conference (osdi 2018)
@@ -182,7 +188,8 @@
                    #:slides? #t
                    #:conference (sosp 2017)
                    #:authors (list "Haogang Chen" tej "Alex Konradi" "Stephanie Wang" atalay
-                                   adam frans nickolai))
+                                   adam frans nickolai)
+                   #:video-url "https://dl.acm.org/ft_gateway.cfm?id=3132776&ftid=1938331&dwn=1")
            (mk-pub "cfscq:sosp2017-src"
                    #:title "Extending a verified file system with concurrency"
                    #:slides? #t
