@@ -82,6 +82,11 @@
     @img[title: "Slides" 'alt: "slides icon"
          src: "assets/slides.svg" 'height: 16 'width: 16]
   }}
+  @ifdef[(not (null? (pub-video-url pub)))]{
+   @a['href: (pub-video-url pub)]{
+    @img[title: "Video" 'alt: "video icon"
+         src: "assets/video.svg" 'height: 16 'width: 16]
+  }}
   }}))
 
 (define/contract (html/authors pub)
