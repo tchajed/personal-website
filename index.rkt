@@ -69,7 +69,7 @@ concurrency and crash-safety reasoning.}
   @a[href: "https://github.com/tchajed/coq-tricks"]{list of Coq tricks} for
   the advanced user.}
 
- @p{I'm a Fellow in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
+ @p{I'm an advisor in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
 Communication Lab}, where I help students with technical communication. If
 you're working on something where you think I could help, please reach out! I'm
 particularly excited about working on research papers and conference
