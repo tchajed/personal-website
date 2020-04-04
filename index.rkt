@@ -66,8 +66,9 @@ including a verified file system (FSCQ) and Perennial, a framework that combines
 concurrency and crash-safety reasoning.}
 
  @p{I do a lot of work on Coq-related things, including maintaining a
-  @a[href: "https://github.com/tchajed/coq-tricks"]{list of Coq tricks} for
-  the advanced user.}
+  @a[href: "https://github.com/tchajed/coq-tricks"]{list of Coq tricks} for the
+  advanced user and recently using
+  @a[href: "https://github.com/tchajed/ltac2-tutorial"]{Ltac2}.}
 
  @p{I'm a communication Fellow in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
 Communication Lab}, where I help students with technical communication. If
