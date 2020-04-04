@@ -67,8 +67,7 @@ concurrency and crash-safety reasoning.}
 
  @p{I do a lot of work on Coq-related things, including maintaining a
   @a[href: "https://github.com/tchajed/coq-tricks"]{list of Coq tricks} for the
-  advanced user and recently using
-  @a[href: "https://github.com/tchajed/ltac2-tutorial"]{Ltac2}.}
+  advanced user and contributing to @a[href: "https://iris-project.org/"]{Iris}.}
 
  @p{I'm a communication Fellow in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
 Communication Lab}, where I help students with technical communication. If
