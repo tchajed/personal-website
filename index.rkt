@@ -14,7 +14,7 @@
  @title{Tej Chajed}
  @meta[charset: "UTF-8"]
  @named-meta["keywords"]{Tej,Chajed,MIT,computer science}
- @named-meta["description"]{@"I'm Tej Chajed, a sixth-year PhD student in PDOS
+ @named-meta["description"]{@"I'm Tej Chajed, a seventh-year PhD student in PDOS
   at MIT CSAIL working with Frans Kaashoek and Nickolai Zeldovich."}
  @named-meta["author"]{@"Tej Chajed <tchajed@mit.edu>"}
  @named-meta["viewport"]{width=device-width, initial-scale=1.0}
@@ -39,7 +39,7 @@
  @div[class: "intro container"]{
   @div[class: "bio"]{
    @span[class: "email"]{@|email|}
-   @p{I'm Tej Chajed, a sixth-year PhD student in
+   @p{I'm Tej Chajed, a seventh-year PhD student in
     @a[href: "https://pdos.csail.mit.edu/"]{PDOS} at MIT CSAIL, advised by Frans
     Kaashoek and Nickolai Zeldovich. I work on formal verification of systems
     software @entity['mdash] I implement systems and prove they do what they're
@@ -78,14 +78,22 @@ presentations.}
  @h2{Publications}
  @pubs
 
+ @h2{Teaching}
+ I helped create 6.826 (Principles of Computer Systems), a class on systems
+verification, and in particular I created the lab assignments. I was a TA for
+the class in @a[href: "https://6826.csail.mit.edu/2020/"]{Fall 2020}, @a[href:
+"https://6826.csail.mit.edu/2019/"]{Fall 2019}, and @a[href:
+"https://6826.csail.mit.edu/2017/"]{Fall 2017}.
+
  @h2{Service}
  @ul{
+     @li{@a[href: "https://popl21.sigplan.org/track/POPL-2021-Artifact-Evaluation"]{@span[class: "pub-title"]{POPL 2021 AEC}}}
      @li{@a[href: "https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts"]{@span[class: "pub-title"]{PLDI 2020 AEC}}}
      @li{@a[href: "https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation"]{@span[class: "pub-title"]{POPL 2020 AEC}}}
      @li{@a[href: "https://sysartifacts.github.io/"]{@span[class: "pub-title"]{SOSP 2019 AEC}}}
      }
 
- @h3{How to pronounce my name}
+@h3{How to pronounce my name}
  "Tej" rhymes with "page", and Chajed is pronounced as written (CHA-jed).
  @;{
  @; if you can read this, you probably already pronounce Tej correctly
