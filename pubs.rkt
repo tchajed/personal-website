@@ -146,7 +146,8 @@
            (mk-pub "coq-record-update:coqpl2021"
                    #:title "Record Updates in Coq"
                    #:conference (coqpl 2021)
-                   #:authors (list tej))
+                   #:authors (list tej)
+                   #:slides? #t)
            (mk-pub "goose:coqpl2020"
                    #:title "Verifying concurrent Go code in Coq with Goose"
                    #:conference (coqpl 2020)
