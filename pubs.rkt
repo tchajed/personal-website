@@ -41,7 +41,7 @@
          [abbrv-conf (@abbr[title: (conf-fullname conference)]{@short})])
     @span[class: "pub-conference"]{
  (@(if (conf-to-appear? conference)
-       @list{to appear at @abbrv-conf}
+       @list{conditionally accepted to @abbrv-conf}
        abbrv-conf))
  }))
 
@@ -136,6 +136,7 @@
          [tej-non-bold "Tej Chajed"]
          [atalay "Atalay İleri"]
          [joe "Joseph Tassarotti"]
+         [ralf "Ralf Jung"]
          [adam "Adam Chlipala"]
          [haogang "Haogang Chen"]
          [frans "M. Frans Kaashoek"]
@@ -143,6 +144,10 @@
 
          [pub-list
           (list
+           (mk-pub "jrnl:osdi2021"
+                   #:title "Verifying a concurrent, crash-safe journaling system using JrnlCert"
+                   #:conference (osdi 2021 #:to-appear? #t)
+                   #:authors (list tej joe "Mark Theng" ralf frans nickolai))
            (mk-pub "coq-record-update:coqpl2021"
                    #:title "Record Updates in Coq"
                    #:conference (coqpl 2021)
