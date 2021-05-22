@@ -144,8 +144,8 @@
 
          [pub-list
           (list
-           (mk-pub "jrnl:osdi2021"
-                   #:title "Verifying a concurrent, crash-safe journaling system using JrnlCert"
+           (mk-pub "gojournal:osdi2021"
+                   #:title "GoJournal: a verified, concurrent, crash-safe journaling system"
                    #:conference (osdi 2021 #:to-appear? #t)
                    #:authors (list tej joe "Mark Theng" ralf frans nickolai))
            (mk-pub "coq-record-update:coqpl2021"
