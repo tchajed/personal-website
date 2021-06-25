@@ -147,7 +147,8 @@
            (mk-pub "gojournal:osdi2021"
                    #:title "GoJournal: a verified, concurrent, crash-safe journaling system"
                    #:conference (osdi 2021)
-                   #:authors (list tej joe "Mark Theng" ralf frans nickolai))
+                   #:authors (list tej joe "Mark Theng" ralf frans nickolai)
+                   #:slides? #t)
            (mk-pub "coq-record-update:coqpl2021"
                    #:title "Record Updates in Coq"
                    #:conference (coqpl 2021)
