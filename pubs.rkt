@@ -148,12 +148,14 @@
                    #:title "GoJournal: a verified, concurrent, crash-safe journaling system"
                    #:conference (osdi 2021)
                    #:authors (list tej joe "Mark Theng" ralf frans nickolai)
-                   #:slides? #t)
+                   #:slides? #t
+                   #:video-url "https://www.youtube.com/watch?v=bii1Jd0l_1M")
            (mk-pub "coq-record-update:coqpl2021"
                    #:title "Record Updates in Coq"
                    #:conference (coqpl 2021)
                    #:authors (list tej)
-                   #:slides? #t)
+                   #:slides? #t
+                   #:video-url "https://www.youtube.com/watch?v=T85e_xWXEig")
            (mk-pub "goose:coqpl2020"
                    #:title "Verifying concurrent Go code in Coq with Goose"
                    #:conference (coqpl 2020)
