@@ -87,6 +87,7 @@ the class in @a[href: "https://6826.csail.mit.edu/2020/"]{Fall 2020}, @a[href:
 
  @h2{Service}
  @ul{
+     @li{@a[href: "https://popl22.sigplan.org/committee/POPL-2022-artifact-evaluation-artifact-evaluation-comittee"]{@span[class: "pub-title"]{POPL 2022 AEC}}}
      @li{@a[href: "https://eurodw21.github.io/"]{@span[class: "pub-title"]{EuroDW 2021 PC}}}
      @li{@a[href: "https://popl21.sigplan.org/track/POPL-2021-Artifact-Evaluation"]{@span[class: "pub-title"]{POPL 2021 AEC}}}
      @li{@a[href: "https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts"]{@span[class: "pub-title"]{PLDI 2020 AEC}}}
