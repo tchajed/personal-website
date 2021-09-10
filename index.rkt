@@ -39,7 +39,7 @@
  @div[class: "intro container"]{
   @div[class: "bio"]{
    @span[class: "email"]{@|email|}
-   @p{I'm Tej Chajed, a seventh-year PhD student in
+   @p{I'm Tej Chajed, a final-year PhD student in
     @a[href: "https://pdos.csail.mit.edu/"]{PDOS} at MIT CSAIL, advised by Frans
     Kaashoek and Nickolai Zeldovich. I work on formal verification of systems
     software @entity['mdash] I implement systems and prove they do what they're
