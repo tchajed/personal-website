@@ -3,6 +3,10 @@ $blue: #0051c9;
   font-size: 1.17em;
 }
 
+@mixin bold {
+  font-weight: 600;
+}
+
 a {
   text-decoration: none;
   color: $blue;
@@ -50,6 +54,9 @@ blockquote {
 .portrait {
   flex-shrink: 0;
 }
+.bold {
+  @include bold;
+}
 
 .pub-header {
   align-items: baseline;
@@ -65,7 +72,7 @@ blockquote {
 }
 
 .self-author {
-  font-weight: 600;
+  @include bold;
 }
 .pub-links {
   margin-left: auto;

@@ -46,6 +46,8 @@
     supposed to.}
    @p{Before coming to MIT I was at UIUC, where I got undergraduate degrees
     in Electrical Engineering and Computer Science.}
+   @p{@span[class: "bold"]{I am on the faculty job market this year.}
+           Application materials will be posted here soon.}
   }
   @img[class: "portrait"
        alt: "Tej Chajed picture"
