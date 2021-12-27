@@ -54,8 +54,8 @@
   @img[class: "portrait"
        alt: "Tej Chajed picture"
        src: "assets/portrait.jpg"
-       width: 250
-       height: 250]
+       width: "200em"
+       height: "200em"]
  }
 
  @h2{Research} @p{Even critical systems software has bugs @entity['mdash] for
@@ -100,7 +100,7 @@ the class in @a[href: "https://6826.csail.mit.edu/2020/"]{Fall 2020}, @a[href:
      @li{@a[href: "https://sysartifacts.github.io/"]{@span[class: "pub-title"]{SOSP 2019 AEC}}}
      }
 
-@h3{How to pronounce my name}
+@h2{How to pronounce my name}
  "Tej" rhymes with "page", and Chajed is pronounced as written (CHA-jed).
  @;{
  @; if you can read this, you probably already pronounce Tej correctly
