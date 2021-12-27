@@ -2,9 +2,11 @@
 
 (require scribble/html)
 
+(define (check-path-exists path)
+  (unless (file-exists? path)
+    (raise-user-error @~a{attempt to link to non-existent file @path})))
+
 (define (file-link fname text)
-  (let ([path (build-path "docs" fname)])
-    (unless (file-exists? path)
-      (raise-user-error @~a{attempt to link to non-existent file @path})))
+  (check-path-exists (build-path "docs" fname))
   (a 'href: fname text))
 (provide file-link)
