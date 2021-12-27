@@ -33,6 +33,13 @@
  }
  })
 
+(define research-statement
+  @a[href: "files/research-statement.pdf"]{research statement})
+(define teaching-statement
+  @a[href: "files/teaching-statement.pdf"]{teaching statement})
+(define cv-link
+  @a[href: "files/cv.pdf"]{CV})
+
 (define page-body
   @body{
  @h1{Tej Chajed}
@@ -47,9 +54,7 @@
    @p{Before coming to MIT I was at UIUC, where I got undergraduate degrees
     in Electrical Engineering and Computer Science.}
    @p{@span[class: "bold"]{I am on the faculty job market this year.}
-           You can find my @a[href: "files/cv.pdf"]{CV}, @a[href:
-"files/research-statement.pdf"]{research statement}, and @a[href:
-"files/teaching-statement.pdf"]{teaching statement} here.}
+           You can find my @|research-statement|, @|teaching-statement|, and @|cv-link| here.}
   }
   @img[class: "portrait"
        alt: "Tej Chajed picture"
