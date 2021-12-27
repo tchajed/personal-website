@@ -3,6 +3,7 @@
 (require racket/format)
 (require syntax/parse/define)
 (require scribble/html)
+(require "lib.rkt")
 
 ;; Publication data representations
 
@@ -44,12 +45,6 @@
        @list{conditionally accepted to @abbrv-conf}
        abbrv-conf))
  }))
-
-(define (file-link fname text)
-  (let ([path (build-path "docs" fname)])
-    (unless (file-exists? path)
-      (raise-user-error @~a{attempt to link to non-existent file @path})))
-  (a 'href: fname text))
 
 (define/contract (html/pub-title pub)
   (-> pub? any/c)

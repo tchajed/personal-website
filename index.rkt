@@ -3,6 +3,7 @@
 (require scribble/html)
 
 (require "pubs.rkt")
+(require "lib.rkt")
 
 (define email "tchajed@mit.edu")
 
@@ -34,11 +35,10 @@
  })
 
 (define research-statement
-  @a[href: "files/research-statement.pdf"]{research statement})
+  @file-link["files/research-statement.pdf"]{research statement})
 (define teaching-statement
-  @a[href: "files/teaching-statement.pdf"]{teaching statement})
-(define cv-link
-  @a[href: "files/cv.pdf"]{CV})
+  @file-link["files/teaching-statement.pdf"]{teaching statement})
+(define cv-link @file-link["files/cv.pdf"]{CV})
 
 (define page-body
   @body{
