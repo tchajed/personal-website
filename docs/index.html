@@ -17,20 +17,20 @@ gtag('js', new Date());
 
 gtag('config', 'UA-130703705-1');
 </script></head>
-<body> <h1>Tej Chajed</h1>
- <div class="intro container"><div class="bio"><span class="email">tchajed@mit.edu</span>
-<p>I'm Tej Chajed, a final-year PhD student in
+<body class="max-w-[800px] mx-auto px-2 text-base"> <h1 class="my-8 font-bold">Tej Chajed</h1>
+ <div class="items-start flex"><div class="pr-4"><span class="text-xl">tchajed@mit.edu</span>
+<p class="my-6">I'm Tej Chajed, a final-year PhD student in
 <a href="https://pdos.csail.mit.edu/">PDOS</a> at MIT CSAIL, advised by Frans
 Kaashoek and Nickolai Zeldovich. I work on formal verification of systems
 software &mdash; I implement systems and prove they do what they're
 supposed to.</p>
-<p>Before coming to MIT I was at UIUC, where I got undergraduate degrees
+<p class="mb-4">Before coming to MIT I was at UIUC, where I got undergraduate degrees
 in Electrical Engineering and Computer Science.</p>
-<p><span class="bold">I am on the faculty job market this year.</span>
-     You can find my <a href="files/research-statement.pdf">research statement</a>, <a href="files/teaching-statement.pdf">teaching statement</a>, and <a href="files/cv.pdf">CV</a> here.</p></div>
-<img class="portrait" alt="Tej Chajed picture" src="assets/portrait.jpg" width="200em" height="200em" /></div>
+<p class="mb-4"><span class="font-bold">I am on the faculty job market this year.</span>
+You can find my <a href="files/research-statement.pdf">research statement</a>, <a href="files/teaching-statement.pdf">teaching statement</a>, and <a href="files/cv.pdf">CV</a> here.</p></div>
+<img class="pr-4 shrink-9" alt="Tej Chajed picture" src="assets/portrait.jpg" width="220em" height="220em" /></div>
 
- <h2>Research</h2> <p>Even critical systems software has bugs &mdash; for
+ <h2 class="my-4 font-semibold">Research</h2> <p class="mb-4">Even critical systems software has bugs &mdash; for
 example, file systems have bugs that occasionally lead to users losing data. My
 research aims to write systems software that always does what it's supposed to.
 We do this with formal verification: we write a precise specification of what
@@ -41,99 +41,99 @@ of work I helped create Perennial, a framework for reasoning about crash
 safety and concurrency, and Goose, a system for reasoning about code written in
 Go using Perennial.</p>
 
- <p>I do a lot of work on Coq-related things, including maintaining a
+ <p class="mb-4">I do a lot of work on Coq-related things, including maintaining a
 <a href="https://github.com/tchajed/coq-tricks">list of Coq tricks</a> for the
 advanced user and contributing to <a href="https://iris-project.org/">Iris</a>.</p>
 
- <p>I'm a communication Fellow in the <a href="https://mitcommlab.mit.edu/eecs/">EECS
+ <p class="mb-4">I'm a communication Fellow in the <a href="https://mitcommlab.mit.edu/eecs/">EECS
 Communication Lab</a>, where I help students with technical communication. If
 you're working on something where you think I could help, please reach out! I'm
 particularly excited about working on research papers and conference
 presentations.</p>
 
- <h2>Publications</h2>
- <div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/gojournal:osdi2021.pdf">GoJournal: a verified, concurrent, crash-safe journaling system</a></span>
+ <h2 class="my-4 font-semibold">Publications</h2>
+ <div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/gojournal:osdi2021.pdf">GoJournal: a verified, concurrent, crash-safe journaling system</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="USENIX Symposium on Operating System Design and Implementation (OSDI 2021)">OSDI 2021</abbr>)</span></div>
-<div class="pub-links"><a href="papers/gojournal:osdi2021.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
-<a href="papers/gojournal:osdi2021-slides.pdf"><img title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
-<span class="self-author">Tej Chajed</span>, Joseph Tassarotti, Mark Theng, Ralf Jung, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/coq-record-update:coqpl2021.pdf">Record Updates in Coq</a></span>
+<span class="inline-block">(<abbr title="USENIX Symposium on Operating System Design and Implementation (OSDI 2021)">OSDI 2021</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/gojournal:osdi2021.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<a href="papers/gojournal:osdi2021-slides.pdf"><img class="inline-block" title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
+<span class="font-bold">Tej Chajed</span>, Joseph Tassarotti, Mark Theng, Ralf Jung, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/coq-record-update:coqpl2021.pdf">Record Updates in Coq</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="International Workshop on Coq for Programming Languages (CoqPL 2021)">CoqPL 2021</abbr>)</span></div>
-<div class="pub-links"><a href="papers/coq-record-update:coqpl2021.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
-<a href="papers/coq-record-update:coqpl2021-slides.pdf"><img title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
-<span class="self-author">Tej Chajed</span></div><div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/goose:coqpl2020.pdf">Verifying concurrent Go code in Coq with Goose</a></span>
+<span class="inline-block">(<abbr title="International Workshop on Coq for Programming Languages (CoqPL 2021)">CoqPL 2021</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/coq-record-update:coqpl2021.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<a href="papers/coq-record-update:coqpl2021-slides.pdf"><img class="inline-block" title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
+<span class="font-bold">Tej Chajed</span></div><div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/goose:coqpl2020.pdf">Verifying concurrent Go code in Coq with Goose</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="International Workshop on Coq for Programming Languages (CoqPL 2020)">CoqPL 2020</abbr>)</span></div>
-<div class="pub-links"><a href="papers/goose:coqpl2020.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
-<a href="papers/goose:coqpl2020-slides.pdf"><img title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
-<span class="self-author">Tej Chajed</span>, Joseph Tassarotti, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/perennial:sosp2019.pdf">Verifying concurrent, crash-safe systems with Perennial</a></span>
+<span class="inline-block">(<abbr title="International Workshop on Coq for Programming Languages (CoqPL 2020)">CoqPL 2020</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/goose:coqpl2020.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<a href="papers/goose:coqpl2020-slides.pdf"><img class="inline-block" title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
+<span class="font-bold">Tej Chajed</span>, Joseph Tassarotti, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/perennial:sosp2019.pdf">Verifying concurrent, crash-safe systems with Perennial</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="ACM Symposium on Operating System Principles (SOSP 2019)">SOSP 2019</abbr>)</span></div>
-<div class="pub-links"><a href="papers/perennial:sosp2019.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
-<a href="papers/perennial:sosp2019-slides.pdf"><img title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
-<span class="self-author">Tej Chajed</span>, Joseph Tassarotti, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/everparse:usenix-sec2019.pdf">EverParse: Verified Secure Zero-Copy Parsers for<br /> Authenticated Message Formats</a></span>
+<span class="inline-block">(<abbr title="ACM Symposium on Operating System Principles (SOSP 2019)">SOSP 2019</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/perennial:sosp2019.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<a href="papers/perennial:sosp2019-slides.pdf"><img class="inline-block" title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
+<span class="font-bold">Tej Chajed</span>, Joseph Tassarotti, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/everparse:usenix-sec2019.pdf">EverParse: Verified Secure Zero-Copy Parsers for<br /> Authenticated Message Formats</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="USENIX Symposium on Security (USENIX Security 2019)">USENIX Security 2019</abbr>)</span></div>
-<div class="pub-links"><a href="papers/everparse:usenix-sec2019.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<span class="inline-block">(<abbr title="USENIX Symposium on Security (USENIX Security 2019)">USENIX Security 2019</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/everparse:usenix-sec2019.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
 </div></div>
-Tahina Ramananandro, Antoine Delignat-Lavaud, Cédric Fournet, Nikhil Swamy, <span class="self-author">Tej Chajed</span>, Nadim Kobeissi, and Jonathan Protzenko</div><div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/argosy:pldi2019.pdf">Argosy: Verifying Layered Storage Systems with Recovery Refinement</a></span>
+Tahina Ramananandro, Antoine Delignat-Lavaud, Cédric Fournet, Nikhil Swamy, <span class="font-bold">Tej Chajed</span>, Nadim Kobeissi, and Jonathan Protzenko</div><div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/argosy:pldi2019.pdf">Argosy: Verifying Layered Storage Systems with Recovery Refinement</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2019)">PLDI 2019</abbr>)</span></div>
-<div class="pub-links"><a href="papers/argosy:pldi2019.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
-<a href="papers/argosy:pldi2019-slides.pdf"><img title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
-<span class="self-author">Tej Chajed</span>, Joseph Tassarotti, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/cspec:osdi2018.pdf">Verifying concurrent software using movers in CSPEC</a></span>
+<span class="inline-block">(<abbr title="SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2019)">PLDI 2019</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/argosy:pldi2019.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<a href="papers/argosy:pldi2019-slides.pdf"><img class="inline-block" title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
+<span class="font-bold">Tej Chajed</span>, Joseph Tassarotti, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/cspec:osdi2018.pdf">Verifying concurrent software using movers in CSPEC</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="USENIX Symposium on Operating System Design and Implementation (OSDI 2018)">OSDI 2018</abbr>)</span></div>
-<div class="pub-links"><a href="papers/cspec:osdi2018.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
-<a href="papers/cspec:osdi2018-slides.pdf"><img title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
-<span class="self-author">Tej Chajed</span>, M. Frans Kaashoek, Butler Lampson, and Nickolai Zeldovich</div><div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/disksec:osdi2018.pdf">Proving confidentiality in a file system using DiskSec</a></span>
+<span class="inline-block">(<abbr title="USENIX Symposium on Operating System Design and Implementation (OSDI 2018)">OSDI 2018</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/cspec:osdi2018.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<a href="papers/cspec:osdi2018-slides.pdf"><img class="inline-block" title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
+<span class="font-bold">Tej Chajed</span>, M. Frans Kaashoek, Butler Lampson, and Nickolai Zeldovich</div><div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/disksec:osdi2018.pdf">Proving confidentiality in a file system using DiskSec</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="USENIX Symposium on Operating System Design and Implementation (OSDI 2018)">OSDI 2018</abbr>)</span></div>
-<div class="pub-links"><a href="papers/disksec:osdi2018.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<span class="inline-block">(<abbr title="USENIX Symposium on Operating System Design and Implementation (OSDI 2018)">OSDI 2018</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/disksec:osdi2018.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
 </div></div>
-Atalay İleri, <span class="self-author">Tej Chajed</span>, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/dfscq:sosp2017.pdf">Verifying a high-performance crash-safe file system<br /> using a tree specification</a></span>
+Atalay İleri, <span class="font-bold">Tej Chajed</span>, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/dfscq:sosp2017.pdf">Verifying a high-performance crash-safe file system<br /> using a tree specification</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="ACM Symposium on Operating System Principles (SOSP 2017)">SOSP 2017</abbr>)</span></div>
-<div class="pub-links"><a href="papers/dfscq:sosp2017.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
-<a href="papers/dfscq:sosp2017-slides.pdf"><img title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
-Haogang Chen, <span class="self-author">Tej Chajed</span>, Alex Konradi, Stephanie Wang, Atalay İleri, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/cfscq:sosp2017-src.pdf">Extending a verified file system with concurrency</a></span>
+<span class="inline-block">(<abbr title="ACM Symposium on Operating System Principles (SOSP 2017)">SOSP 2017</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/dfscq:sosp2017.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<a href="papers/dfscq:sosp2017-slides.pdf"><img class="inline-block" title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
+Haogang Chen, <span class="font-bold">Tej Chajed</span>, Alex Konradi, Stephanie Wang, Atalay İleri, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/cfscq:sosp2017-src.pdf">Extending a verified file system with concurrency</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="(Student Research Competition at ACM Symposium onOperating System Principles) (SOSP 2017 SRC)">SOSP 2017 SRC</abbr>)</span></div>
-<div class="pub-links"><a href="papers/cfscq:sosp2017-src.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
-<a href="papers/cfscq:sosp2017-src-slides.pdf"><img title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
-<span class="self-author">Tej Chajed</span>, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/fscq:cacm2017.pdf">Certifying a file system using Crash Hoare Logic:<br />
+<span class="inline-block">(<abbr title="(Student Research Competition at ACM Symposium onOperating System Principles) (SOSP 2017 SRC)">SOSP 2017 SRC</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/cfscq:sosp2017-src.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<a href="papers/cfscq:sosp2017-src-slides.pdf"><img class="inline-block" title="Slides" alt="slides icon" src="assets/slides.svg" height="16" width="16" /></a></div></div>
+<span class="font-bold">Tej Chajed</span>, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/fscq:cacm2017.pdf">Certifying a file system using Crash Hoare Logic:<br />
 Correctness in the presence of crashes</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="Communications of the ACM (CACM 2017)">CACM 2017</abbr>)</span></div>
-<div class="pub-links"><a href="papers/fscq:cacm2017.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<span class="inline-block">(<abbr title="Communications of the ACM (CACM 2017)">CACM 2017</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/fscq:cacm2017.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
 </div></div>
-Tej Chajed, Haogang Chen, Adam Chlipala, M. Frans Kaashoek, Nickolai Zeldovich, and Daniel Ziegler</div><div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/fscq:sosp2015.pdf">Using Crash Hoare Logic for certifying the FSCQ file system</a></span>
+Tej Chajed, Haogang Chen, Adam Chlipala, M. Frans Kaashoek, Nickolai Zeldovich, and Daniel Ziegler</div><div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/fscq:sosp2015.pdf">Using Crash Hoare Logic for certifying the FSCQ file system</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="ACM Symposium on Operating System Principles (SOSP 2015)">SOSP 2015</abbr>)</span></div>
-<div class="pub-links"><a href="papers/fscq:sosp2015.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<span class="inline-block">(<abbr title="ACM Symposium on Operating System Principles (SOSP 2015)">SOSP 2015</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/fscq:sosp2015.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
 </div></div>
-Haogang Chen, Daniel Ziegler, <span class="self-author">Tej Chajed</span>, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pub"><div class="pub-header container"><div><span class="pub-title"><a href="papers/amber:hotos2015.pdf">Amber: Decoupling user data from web applications</a></span>
+Haogang Chen, Daniel Ziegler, <span class="font-bold">Tej Chajed</span>, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich</div><div class="pb-4"><div class="items-baseline flex w-full"><div><span class="text-xl"><a href="papers/amber:hotos2015.pdf">Amber: Decoupling user data from web applications</a></span>
 &nbsp;
-<span class="pub-conference">(<abbr title="Workshop on Hot Topics in Operating Systems (HotOS 2015)">HotOS 2015</abbr>)</span></div>
-<div class="pub-links"><a href="papers/amber:hotos2015.pdf"><img title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
+<span class="inline-block">(<abbr title="Workshop on Hot Topics in Operating Systems (HotOS 2015)">HotOS 2015</abbr>)</span></div>
+<div class="ml-auto w-[48px]"><a href="papers/amber:hotos2015.pdf"><img class="inline-block" title="Paper PDF" alt="paper icon" src="assets/file.svg" height="16" width="16" /></a>
 </div></div>
-<span class="self-author">Tej Chajed</span>, Jon Gjengset, Jelle van den Hooff, M. Frans Kaashoek, James Mickens, Robert Morris, and Nickolai Zeldovich</div>
+<span class="font-bold">Tej Chajed</span>, Jon Gjengset, Jelle van den Hooff, M. Frans Kaashoek, James Mickens, Robert Morris, and Nickolai Zeldovich</div>
 
- <h2>Teaching</h2>
- I helped create 6.826 (Principles of Computer Systems), a class on systems
+ <h2 class="my-4 font-semibold">Teaching</h2>
+ <p class="mb-4">I helped create 6.826 (Principles of Computer Systems), a class on systems
 verification, and in particular I created the lab assignments. I was a TA for
-the class in <a href="https://6826.csail.mit.edu/2020/">Fall 2020</a>, <a href="https://6826.csail.mit.edu/2019/">Fall 2019</a>, and <a href="https://6826.csail.mit.edu/2017/">Fall 2017</a>.
+the class in <a href="https://6826.csail.mit.edu/2020/">Fall 2020</a>, <a href="https://6826.csail.mit.edu/2019/">Fall 2019</a>, and <a href="https://6826.csail.mit.edu/2017/">Fall 2017</a>.</p>
 
- <h2>Service</h2>
- <ul><li><a href="https://pldi22.sigplan.org/committee/pldi-2022-pldi-program-committee"><span class="pub-title">PLDI 2022 PC</span></a></li>
-<li><a href="https://popl22.sigplan.org/committee/POPL-2022-artifact-evaluation-artifact-evaluation-comittee"><span class="pub-title">POPL 2022 AEC</span></a></li>
-<li><a href="https://eurodw21.github.io/"><span class="pub-title">EuroDW 2021 PC</span></a></li>
-<li><a href="https://popl21.sigplan.org/track/POPL-2021-Artifact-Evaluation"><span class="pub-title">POPL 2021 AEC</span></a></li>
-<li><a href="https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts"><span class="pub-title">PLDI 2020 AEC</span></a></li>
-<li><a href="https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation"><span class="pub-title">POPL 2020 AEC</span></a></li>
-<li><a href="https://sysartifacts.github.io/"><span class="pub-title">SOSP 2019 AEC</span></a></li></ul>
+ <h2 class="my-4 font-semibold">Service</h2>
+ <ul><li><a href="https://pldi22.sigplan.org/committee/pldi-2022-pldi-program-committee"><span class="text-xl">PLDI 2022 PC</span></a></li>
+<li><a href="https://popl22.sigplan.org/committee/POPL-2022-artifact-evaluation-artifact-evaluation-comittee"><span class="text-xl">POPL 2022 AEC</span></a></li>
+<li><a href="https://eurodw21.github.io/"><span class="text-xl">EuroDW 2021 PC</span></a></li>
+<li><a href="https://popl21.sigplan.org/track/POPL-2021-Artifact-Evaluation"><span class="text-xl">POPL 2021 AEC</span></a></li>
+<li><a href="https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts"><span class="text-xl">PLDI 2020 AEC</span></a></li>
+<li><a href="https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation"><span class="text-xl">POPL 2020 AEC</span></a></li>
+<li><a href="https://sysartifacts.github.io/"><span class="text-xl">SOSP 2019 AEC</span></a></li></ul>
 
-<h2>How to pronounce my name</h2>
+<h2 class="my-4 font-semibold">How to pronounce my name</h2>
  &quot;Tej&quot; rhymes with &quot;page&quot;, and Chajed is pronounced as written (CHA-jed).
 </body></html>

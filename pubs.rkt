@@ -40,7 +40,7 @@
   (-> conf? any/c)
   (let* ([short (conf-short conference)]
          [abbrv-conf (@abbr[title: (conf-fullname conference)]{@short})])
-    @span[class: "pub-conference"]{
+    @span[class: "inline-block"]{
  (@(if (conf-to-appear? conference)
        @list{conditionally accepted to @abbrv-conf}
        abbrv-conf))
@@ -51,7 +51,7 @@
   (let ([key (pub-key pub)]
         [title (pub-title pub)])
     @div{
- @span[class: "pub-title"]{
+ @span[class: "text-xl"]{
   @(if (pub-published? pub)
        (file-link @~a{papers/@|key|.pdf} title)
        title)
@@ -67,14 +67,16 @@
   (-> pub? any/c)
   (let ([key (pub-key pub)])
     @ifdef[(pub-published? pub)]{
- @div[class: "pub-links"]{
+ @div[class: "ml-auto w-[48px]"]{
   @file-link[@~a{papers/@|key|.pdf}]{
-   @img[title: "Paper PDF" 'alt: "paper icon"
+   @img[class: "inline-block"
+        title: "Paper PDF" 'alt: "paper icon"
         src: "assets/file.svg" 'height: 16 'width: 16]
   }
   @ifdef[(pub-slides? pub)]{
    @file-link[@~a{papers/@|key|-slides.pdf}]{
-    @img[title: "Slides" 'alt: "slides icon"
+    @img[class: "inline-block"
+         title: "Slides" 'alt: "slides icon"
          src: "assets/slides.svg" 'height: 16 'width: 16]
   }}
   }}))
@@ -85,8 +87,8 @@
 
 (define/contract (html/pub pub)
   (-> pub? any/c)
-  @div[class: "pub"]{
- @div[class: "pub-header container"]{
+  @div[class: "pb-4"]{
+ @div[class: "items-baseline flex w-full"]{
   @html/pub-title[pub]
   @html/pub-links[pub]
  }
@@ -127,7 +129,7 @@
             Programming Languages}])
       (mk-conference fullname short #:to-appear? to-appear?)))
 
-  (let* ([tej @span[class: "self-author"]{Tej Chajed}]
+  (let* ([tej @span[class: "font-bold"]{Tej Chajed}]
          [tej-non-bold "Tej Chajed"]
          [atalay "Atalay İleri"]
          [joe "Joseph Tassarotti"]

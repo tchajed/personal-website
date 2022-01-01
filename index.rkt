@@ -41,29 +41,29 @@
 (define cv-link @file-link["files/cv.pdf"]{CV})
 
 (define page-body
-  @body{
- @h1{Tej Chajed}
- @div[class: "intro container"]{
-  @div[class: "bio"]{
-   @span[class: "email"]{@|email|}
-   @p{I'm Tej Chajed, a final-year PhD student in
+  @body[class: "max-w-[800px] mx-auto px-2 text-base"]{
+ @h1[class: "my-8 font-bold"]{Tej Chajed}
+ @div[class: "items-start flex"]{
+  @div[class: "pr-4"]{
+   @span[class: "text-xl"]{@|email|}
+   @p[class: "my-6"]{I'm Tej Chajed, a final-year PhD student in
     @a[href: "https://pdos.csail.mit.edu/"]{PDOS} at MIT CSAIL, advised by Frans
     Kaashoek and Nickolai Zeldovich. I work on formal verification of systems
     software @entity['mdash] I implement systems and prove they do what they're
     supposed to.}
-   @p{Before coming to MIT I was at UIUC, where I got undergraduate degrees
+   @p[class: "mb-4"]{Before coming to MIT I was at UIUC, where I got undergraduate degrees
     in Electrical Engineering and Computer Science.}
-   @p{@span[class: "bold"]{I am on the faculty job market this year.}
+   @p[class: "mb-4"]{@span[class: "font-bold"]{I am on the faculty job market this year.}
            You can find my @|research-statement|, @|teaching-statement|, and @|cv-link| here.}
   }
-  @img[class: "portrait"
+  @img[class: "pr-4 shrink-9"
        alt: "Tej Chajed picture"
        src: "assets/portrait.jpg"
-       width: "200em"
-       height: "200em"]
+       width: "220em"
+       height: "220em"]
  }
 
- @h2{Research} @p{Even critical systems software has bugs @entity['mdash] for
+ @h2[class: "my-4 font-semibold"]{Research} @p[class: "mb-4"]{Even critical systems software has bugs @entity['mdash] for
 example, file systems have bugs that occasionally lead to users losing data. My
 research aims to write systems software that always does what it's supposed to.
 We do this with formal verification: we write a precise specification of what
@@ -74,38 +74,38 @@ of work I helped create Perennial, a framework for reasoning about crash
 safety and concurrency, and Goose, a system for reasoning about code written in
 Go using Perennial.}
 
- @p{I do a lot of work on Coq-related things, including maintaining a
+ @p[class: "mb-4"]{I do a lot of work on Coq-related things, including maintaining a
   @a[href: "https://github.com/tchajed/coq-tricks"]{list of Coq tricks} for the
   advanced user and contributing to @a[href: "https://iris-project.org/"]{Iris}.}
 
- @p{I'm a communication Fellow in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
+ @p[class: "mb-4"]{I'm a communication Fellow in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
 Communication Lab}, where I help students with technical communication. If
 you're working on something where you think I could help, please reach out! I'm
 particularly excited about working on research papers and conference
 presentations.}
 
- @h2{Publications}
+ @h2[class: "my-4 font-semibold"]{Publications}
  @pubs
 
- @h2{Teaching}
- I helped create 6.826 (Principles of Computer Systems), a class on systems
+ @h2[class: "my-4 font-semibold"]{Teaching}
+ @p[class: "mb-4"]{I helped create 6.826 (Principles of Computer Systems), a class on systems
 verification, and in particular I created the lab assignments. I was a TA for
 the class in @a[href: "https://6826.csail.mit.edu/2020/"]{Fall 2020}, @a[href:
 "https://6826.csail.mit.edu/2019/"]{Fall 2019}, and @a[href:
-"https://6826.csail.mit.edu/2017/"]{Fall 2017}.
+"https://6826.csail.mit.edu/2017/"]{Fall 2017}.}
 
- @h2{Service}
+ @h2[class: "my-4 font-semibold"]{Service}
  @ul{
-     @li{@a[href: "https://pldi22.sigplan.org/committee/pldi-2022-pldi-program-committee"]{@span[class: "pub-title"]{PLDI 2022 PC}}}
-     @li{@a[href: "https://popl22.sigplan.org/committee/POPL-2022-artifact-evaluation-artifact-evaluation-comittee"]{@span[class: "pub-title"]{POPL 2022 AEC}}}
-     @li{@a[href: "https://eurodw21.github.io/"]{@span[class: "pub-title"]{EuroDW 2021 PC}}}
-     @li{@a[href: "https://popl21.sigplan.org/track/POPL-2021-Artifact-Evaluation"]{@span[class: "pub-title"]{POPL 2021 AEC}}}
-     @li{@a[href: "https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts"]{@span[class: "pub-title"]{PLDI 2020 AEC}}}
-     @li{@a[href: "https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation"]{@span[class: "pub-title"]{POPL 2020 AEC}}}
-     @li{@a[href: "https://sysartifacts.github.io/"]{@span[class: "pub-title"]{SOSP 2019 AEC}}}
+     @li{@a[href: "https://pldi22.sigplan.org/committee/pldi-2022-pldi-program-committee"]{@span[class: "text-xl"]{PLDI 2022 PC}}}
+     @li{@a[href: "https://popl22.sigplan.org/committee/POPL-2022-artifact-evaluation-artifact-evaluation-comittee"]{@span[class: "text-xl"]{POPL 2022 AEC}}}
+     @li{@a[href: "https://eurodw21.github.io/"]{@span[class: "text-xl"]{EuroDW 2021 PC}}}
+     @li{@a[href: "https://popl21.sigplan.org/track/POPL-2021-Artifact-Evaluation"]{@span[class: "text-xl"]{POPL 2021 AEC}}}
+     @li{@a[href: "https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts"]{@span[class: "text-xl"]{PLDI 2020 AEC}}}
+     @li{@a[href: "https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation"]{@span[class: "text-xl"]{POPL 2020 AEC}}}
+     @li{@a[href: "https://sysartifacts.github.io/"]{@span[class: "text-xl"]{SOSP 2019 AEC}}}
      }
 
-@h2{How to pronounce my name}
+@h2[class: "my-4 font-semibold"]{How to pronounce my name}
  "Tej" rhymes with "page", and Chajed is pronounced as written (CHA-jed).
  @;{
  @; if you can read this, you probably already pronounce Tej correctly

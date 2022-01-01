@@ -1,7 +1,9 @@
 all: docs/assets/main.css docs/index.html
 
-docs/assets/main.css: styles/main.scss
-	sassc $< $@
+HTML_FILES := $(shell find docs -name "*.html")
+
+docs/assets/main.css: $(HTML_FILES) styles/input.css
+	npx tailwindcss -i ./styles/input.css -o $@
 
 docs/index.html: index.rkt pubs.rkt
 	racket $< > $@
