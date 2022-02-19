@@ -35,11 +35,11 @@ example, file systems have bugs that occasionally lead to users losing data. My
 research aims to write systems software that always does what it's supposed to.
 We do this with formal verification: we write a precise specification of what
 the system is supposed to do and prove that the implementation meets the
-specification. The focus of my research lately has been verifying a file
-system that has high performance, concurrency, and simple proofs. In this line
-of work I helped create Perennial, a framework for reasoning about crash
-safety and concurrency, and Goose, a system for reasoning about code written in
-Go using Perennial.</p>
+specification. My research has culminated in <a href="https://github.com/mit-pdos/daisy-nfsd">DaisyNFS</a>, a verified,
+concurrent file system that gets good performance.  The path to verifying
+DaisyNFS involved developing new frameworks and tools, including
+<a href="https://github.com/mit-pdos/perennial">Perennial</a>, a framework for reasoning about crash safety and concurrency,
+and <a href="https://github.com/tchajed/goose">Goose</a>, a system for connecting the proofs to Go code.</p>
 
  <p>I do a lot of work on Coq-related things, including maintaining a
 <a href="https://github.com/tchajed/coq-tricks">list of Coq tricks</a> for the

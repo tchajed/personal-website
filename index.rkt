@@ -39,6 +39,9 @@
 (define teaching-statement
   @file-link["files/teaching-statement.pdf"]{teaching statement})
 (define cv-link @file-link["files/cv.pdf"]{CV})
+(define daisy-nfsd-link @a[href: "https://github.com/mit-pdos/daisy-nfsd"]{DaisyNFS})
+(define perennial-link @a[href: "https://github.com/mit-pdos/perennial"]{Perennial})
+(define goose-link @a[href: "https://github.com/tchajed/goose"]{Goose})
 
 (define page-body
   @body{
@@ -68,11 +71,11 @@ example, file systems have bugs that occasionally lead to users losing data. My
 research aims to write systems software that always does what it's supposed to.
 We do this with formal verification: we write a precise specification of what
 the system is supposed to do and prove that the implementation meets the
-specification. The focus of my research lately has been verifying a file
-system that has high performance, concurrency, and simple proofs. In this line
-of work I helped create Perennial, a framework for reasoning about crash
-safety and concurrency, and Goose, a system for reasoning about code written in
-Go using Perennial.}
+specification. My research has culminated in @|daisy-nfsd-link|, a verified,
+concurrent file system that gets good performance.  The path to verifying
+DaisyNFS involved developing new frameworks and tools, including
+@|perennial-link|, a framework for reasoning about crash safety and concurrency,
+and @|goose-link|, a system for connecting the proofs to Go code.}
 
  @p{I do a lot of work on Coq-related things, including maintaining a
   @a[href: "https://github.com/tchajed/coq-tricks"]{list of Coq tricks} for the
