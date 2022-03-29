@@ -98,7 +98,10 @@ the class in @a[href: "https://6826.csail.mit.edu/2020/"]{Fall 2020}, @a[href:
 "https://6826.csail.mit.edu/2017/"]{Fall 2017}.
 
  @h2{Service}
+During my PhD I served on a conference program committee for PLDI 2022 and
+several artifact evaluation committees (AECs).
  @ul{
+     @li{@span[class: "pub-title"]{POPL 2023 PC}}
      @li{@a[href: "https://pldi22.sigplan.org/committee/pldi-2022-pldi-program-committee"]{@span[class: "pub-title"]{PLDI 2022 PC}}}
      @li{@a[href: "https://popl22.sigplan.org/committee/POPL-2022-artifact-evaluation-artifact-evaluation-comittee"]{@span[class: "pub-title"]{POPL 2022 AEC}}}
      @li{@a[href: "https://eurodw21.github.io/"]{@span[class: "pub-title"]{EuroDW 2021 PC}}}
@@ -106,6 +109,7 @@ the class in @a[href: "https://6826.csail.mit.edu/2020/"]{Fall 2020}, @a[href:
      @li{@a[href: "https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts"]{@span[class: "pub-title"]{PLDI 2020 AEC}}}
      @li{@a[href: "https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation"]{@span[class: "pub-title"]{POPL 2020 AEC}}}
      @li{@a[href: "https://sysartifacts.github.io/"]{@span[class: "pub-title"]{SOSP 2019 AEC}}}
+     @;@li{@a[href: "https://eurosys2019.org/call-for-shadow-pc-participation/"]{@span[class: "pub-title"]{EuroSys 2019 Shadow PC}}}
      }
 
 @h2{How to pronounce my name}
