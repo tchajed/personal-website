@@ -43,6 +43,9 @@
 (define perennial-link @a[href: "https://github.com/mit-pdos/perennial"]{Perennial})
 (define goose-link @a[href: "https://github.com/tchajed/goose"]{Goose})
 
+(define (service-link url . content)
+  @a[href: url]{@span[class: "pub-title"]{@content}})
+
 (define page-body
   @body{
  @h1{Tej Chajed}
@@ -101,14 +104,14 @@ the class in @a[href: "https://6826.csail.mit.edu/2020/"]{Fall 2020}, @a[href:
 During my PhD I served on a conference program committee for PLDI 2022 and
 several artifact evaluation committees (AECs).
  @ul{
-     @li{@span[class: "pub-title"]{POPL 2023 PC}}
-     @li{@a[href: "https://pldi22.sigplan.org/committee/pldi-2022-pldi-program-committee"]{@span[class: "pub-title"]{PLDI 2022 PC}}}
-     @li{@a[href: "https://popl22.sigplan.org/committee/POPL-2022-artifact-evaluation-artifact-evaluation-comittee"]{@span[class: "pub-title"]{POPL 2022 AEC}}}
-     @li{@a[href: "https://eurodw21.github.io/"]{@span[class: "pub-title"]{EuroDW 2021 PC}}}
-     @li{@a[href: "https://popl21.sigplan.org/track/POPL-2021-Artifact-Evaluation"]{@span[class: "pub-title"]{POPL 2021 AEC}}}
-     @li{@a[href: "https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts"]{@span[class: "pub-title"]{PLDI 2020 AEC}}}
-     @li{@a[href: "https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation"]{@span[class: "pub-title"]{POPL 2020 AEC}}}
-     @li{@a[href: "https://sysartifacts.github.io/"]{@span[class: "pub-title"]{SOSP 2019 AEC}}}
+     @li{@service-link["https://conf.researchr.org/committee/POPL-2023/POPL-2023-popl-research-papers-program-committee"]{POPL 2023 PC}}
+     @li{@service-link["https://pldi22.sigplan.org/committee/pldi-2022-pldi-program-committee"]{PLDI 2022 PC}}
+     @li{@service-link["https://popl22.sigplan.org/committee/POPL-2022-artifact-evaluation-artifact-evaluation-comittee"]{POPL 2022 AEC}}
+     @li{@service-link["https://eurodw21.github.io/"]{EuroDW 2021 PC}}
+     @li{@service-link["https://popl21.sigplan.org/track/POPL-2021-Artifact-Evaluation"]{POPL 2021 AEC}}
+     @li{@service-link["https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts"]{PLDI 2020 AEC}}
+     @li{@service-link["https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation"]{POPL 2020 AEC}}
+     @li{@service-link["https://sysartifacts.github.io/"]{SOSP 2019 AEC}}
      @;@li{@a[href: "https://eurosys2019.org/call-for-shadow-pc-participation/"]{@span[class: "pub-title"]{EuroSys 2019 Shadow PC}}}
      }
 
