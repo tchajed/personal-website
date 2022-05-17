@@ -6,7 +6,7 @@
   (unless (file-exists? path)
     (raise-user-error @~a{attempt to link to non-existent file @path})))
 
-(define (file-link fname text)
+(define (file-link fname . text)
   (check-path-exists (build-path "docs" fname))
-  (a 'href: fname text))
+  (apply a 'href: fname text))
 (provide file-link)
