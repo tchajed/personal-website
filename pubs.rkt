@@ -141,7 +141,7 @@
           (list
            (mk-pub "daisy-nfs:osdi2022"
                    #:title "Verifying the DaisyNFS concurrent and crash-safe file system with sequential reasoning"
-                   #:conference (osdi 2022 #:to-appear? #t)
+                   #:conference (osdi 2022)
                    #:authors (list tej joe "Mark Theng" frans nickolai)
             )
            (mk-pub "gojournal:osdi2021"
