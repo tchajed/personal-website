@@ -52,15 +52,18 @@
  @div[class: "intro container"]{
   @div[class: "bio"]{
    @span[class: "email"]{@|email|}
-   @p{I'm Tej Chajed, a final-year PhD student in
-    @a[href: "https://pdos.csail.mit.edu/"]{PDOS} at MIT CSAIL, advised by Frans
+   @p{I'm Tej Chajed, a recent PhD graduate from the
+    @a[href: "https://pdos.csail.mit.edu/"]{PDOS} group at MIT, advised by Frans
     Kaashoek and Nickolai Zeldovich. I work on formal verification of systems
     software @entity['mdash] I implement systems and prove they do what they're
     supposed to.}
    @p{Before coming to MIT I was at UIUC, where I got undergraduate degrees
     in Electrical Engineering and Computer Science.}
-   @p{@span[class: "bold"]{I am on the faculty job market this year.}
-    You can find my @|research-statement|, @|teaching-statement|, and @|cv-link| here.}
+   @p{@span[class: "bold"]{I'm excited to join the University of
+        Wisconsin-Madison as an assistant professor in Fall 2023!}
+        Before starting I'll be at VMware Research for a one-year postdoc.}
+    @p{In case you're interested, you can find my @|research-statement|,
+    @|teaching-statement|, and @|cv-link| from my faculty application materials.}
   }
   @img[class: "portrait"
        alt: "Tej Chajed picture"
