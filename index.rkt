@@ -22,14 +22,16 @@
  @link[rel: "canonical" href: "https://www.chajed.io"]
  @link[rel: "stylesheet" href: "assets/main.css"]
  @link[rel: "stylesheet" href: "https://fonts.googleapis.com/css?family=Open+Sans:400,600"]
+@;Global site tag (gtag.js) - Google Analytics
  @literal{
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130703705-1"></script>
+  <script async src=
+  "https://www.googletagmanager.com/gtag/js?id=G-33V2SBCFH9"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
 
-  gtag('config', 'UA-130703705-1');
+   gtag('config', 'G-33V2SBCFH9');
   </script>
  }
  })
