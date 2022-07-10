@@ -1,74 +1,64 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
 <html>
 <head>
-  <title>Verifying the DaisyNFS concurrent and crash-safe file system with
-    sequential reasoning</title>
+  <title>Verifying the DaisyNFS concurrent and crash-safe file
+  system with sequential reasoning</title>
   <link rel="stylesheet" href="../assets/main.css" type="text/css">
-  <script async="" src=
+  <script async src=
   "https://www.googletagmanager.com/gtag/js?id=UA-130703705-1"
-  type="text/javascript">
-</script>
+  type="text/javascript"></script>
   <script type="text/javascript">
-window.dataLayer = window.dataLayer || [];
+  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-130703705-1');
   </script>
 </head>
-
 <body>
-  <h1>Verifying the DaisyNFS concurrent and crash-safe file system with
-    sequential reasoning</h1>
-
+  <h1>Verifying the DaisyNFS concurrent and crash-safe file system
+  with sequential reasoning</h1>
   <h2>OSDI presentation</h2>
-
   <p>Here are the <a href=
   "../papers/daisy-nfs:osdi22-slides.pdf">slides for the OSDI
   presentation.</a> Come watch the talk on Tuesday at 3:15pm!</p>
-
   <h2>Further reading</h2>
-
-  <p>We have an <a href=
-  "../papers/daisy-nfs:osdi22.pdf">OSDI 2022 paper</a> describing
-the design and proof of DaisyNFS. For many more details, you can read
-Tej's <a href="../papers/tchajed-thesis.pdf">PhD thesis</a>.</p>
-
+  <p>We have an <a href="../papers/daisy-nfs:osdi22.pdf">OSDI 2022
+  paper</a> describing the design and proof of DaisyNFS. For many
+  more details, you can read Tej's <a href=
+  "../papers/tchajed-thesis.pdf">PhD thesis</a>.</p>
   <p>Here's the abstract for the paper:</p>
-
   <blockquote>
-    <p>This paper develops a new approach to verifying a performant file system
-    that isolates crash safety and concurrency reasoning to a transaction
-    system that gives atomic access to the disk, so that the rest of the file
-    system can be verified with <em>sequential reasoning</em>.</p>
-    <p>We demonstrate this
-    approach in DaisyNFS, a Network File System (NFS) server written in Go that
-    runs on top of a disk. DaisyNFS uses GoTxn, a new verified, concurrent
-    transaction system that extends GoJournal with two-phase locking and an
-    allocator. The transaction system’s specifi- cation formalizes under what
-    conditions transactions can be verified with only sequential reasoning, and
-    comes with a mechanized proof in Coq that connects the specification
-    to the implementation.</p>
-    <p>As evidence that proofs enjoy sequential reasoning,
-    DaisyNFS uses Dafny, a sequential verification language, to implement
-    and verify all the NFS operations on top of GoTxn. The sequential proofs
-    helped achieve a number of good properties in DaisyNFS: easy incremental
-    development (for example, adding support for large files), a relatively
-    short proof (only 2&times; as many lines of proof as code), and a per- formant
-    implementation (at least 60% the throughput of the Linux NFS server
-    exporting ext4 across a variety of benchmarks).
-    </p>
+    <p>This paper develops a new approach to verifying a performant
+    file system that isolates crash safety and concurrency
+    reasoning to a transaction system that gives atomic access to
+    the disk, so that the rest of the file system can be verified
+    with <em>sequential reasoning</em>.</p>
+    <p>We demonstrate this approach in DaisyNFS, a Network File
+    System (NFS) server written in Go that runs on top of a disk.
+    DaisyNFS uses GoTxn, a new verified, concurrent transaction
+    system that extends GoJournal with two-phase locking and an
+    allocator. The transaction system’s specifi- cation formalizes
+    under what conditions transactions can be verified with only
+    sequential reasoning, and comes with a mechanized proof in Coq
+    that connects the specification to the implementation.</p>
+    <p>As evidence that proofs enjoy sequential reasoning, DaisyNFS
+    uses Dafny, a sequential verification language, to implement
+    and verify all the NFS operations on top of GoTxn. The
+    sequential proofs helped achieve a number of good properties in
+    DaisyNFS: easy incremental development (for example, adding
+    support for large files), a relatively short proof (only 2× as
+    many lines of proof as code), and a per- formant implementation
+    (at least 60% the throughput of the Linux NFS server exporting
+    ext4 across a variety of benchmarks).</p>
   </blockquote>
-
   <h2>DaisyNFS source code</h2>
-
-  <p>All of DaisyNFS is open source. You can start with
-  <a href="https://github.com/mit-pdos/daisy-nfsd">mit-pdos/daisy-nfsd</a>
-  (the file-system code and proofs), or look at
-  <a href="https://github.com/mit-pdos/go-journal">mit-pdos/go-journal</a>
-  for the transaction system, and take a look at
-  <a href="https://github.com/mit-pdos/perennial">mit-pdos/perennial</a> for
-   the GoTxn proofs.</p>
+  <p>All of DaisyNFS is open source. You can start with <a href=
+  "https://github.com/mit-pdos/daisy-nfsd">mit-pdos/daisy-nfsd</a>
+  (the file-system code and proofs), or look at <a href=
+  "https://github.com/mit-pdos/go-journal">mit-pdos/go-journal</a>
+  for the transaction system, and take a look at <a href=
+  "https://github.com/mit-pdos/perennial">mit-pdos/perennial</a>
+  for the GoTxn proofs.</p>
 </body>
 </html>
