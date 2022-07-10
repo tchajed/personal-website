@@ -31,15 +31,15 @@
   <p>Here's the abstract for the paper:</p>
   <blockquote>
     <p>This paper develops a new approach to verifying a performant
-    file system that isolates crash safety and concurrency
-    reasoning to a transaction system that gives atomic access to
-    the disk, so that the rest of the file system can be verified
-    with <em>sequential reasoning</em>.</p>
+    file system that <em>isolates crash safety and concurrency
+    reasoning</em> to a transaction system that gives atomic access
+    to the disk, so that the rest of the file system can be
+    verified with <em>sequential reasoning</em>.</p>
     <p>We demonstrate this approach in DaisyNFS, a Network File
     System (NFS) server written in Go that runs on top of a disk.
     DaisyNFS uses GoTxn, a new verified, concurrent transaction
     system that extends GoJournal with two-phase locking and an
-    allocator. The transaction system’s specifi- cation formalizes
+    allocator. The transaction system’s specification formalizes
     under what conditions transactions can be verified with only
     sequential reasoning, and comes with a mechanized proof in Coq
     that connects the specification to the implementation.</p>
@@ -49,7 +49,7 @@
     sequential proofs helped achieve a number of good properties in
     DaisyNFS: easy incremental development (for example, adding
     support for large files), a relatively short proof (only 2× as
-    many lines of proof as code), and a per- formant implementation
+    many lines of proof as code), and a performant implementation
     (at least 60% the throughput of the Linux NFS server exporting
     ext4 across a variety of benchmarks).</p>
   </blockquote>
@@ -61,5 +61,9 @@
   for the transaction system, and take a look at <a href=
   "https://github.com/mit-pdos/perennial">mit-pdos/perennial</a>
   for the GoTxn proofs.</p>
+  <h2>Poster</h2>
+  <p>Here is a <a href=
+  "../papers/daisy-nfs:osdi2022-poster.pdf">digital copy of the
+  poster</a>.</p>
 </body>
 </html>
