@@ -5,7 +5,8 @@
 (require "pubs.rkt")
 (require "lib.rkt")
 
-(define email "tchajed@mit.edu")
+;;(define email "tchajed@mit.edu")
+(define email "tchajed@gmail.com")
 
 (define (named-meta name . content)
   (apply element 'meta name: name content: content))
