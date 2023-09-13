@@ -127,6 +127,11 @@
             Programming Languages}])
       (mk-conference fullname short #:to-appear? to-appear?)))
 
+  (define (vldb year)
+    (let ([short @~a{VLDB @year}]
+          [fullname @~a{Very Large Databases Conference}])
+      (mk-conference fullname short #:to-appear? #f)))
+
   (let* ([tej @span[class: "self-author"]{Tej Chajed}]
          [tej-non-bold "Tej Chajed"]
          [atalay "Atalay İleri"]
@@ -139,6 +144,11 @@
 
          [pub-list
           (list
+            (mk-pub "dbsp:vldb2023"
+                    #:title "DBSP: Automatic Incremental View Maintenance for Rich Query Languages"
+                    #:conference (vldb 2023)
+                    #:authors (list "Mihai Budiu" tej "Frank McSherry" "Leonid Ryzhyk" "Val Tannen")
+                    )
            (mk-pub "daisy-nfs:osdi2022"
                    #:title "Verifying the DaisyNFS concurrent and crash-safe file system with sequential reasoning"
                    #:conference (osdi 2022)
