@@ -6,7 +6,8 @@
 (require "lib.rkt")
 
 ;;(define email "tchajed@mit.edu")
-(define email "tchajed@gmail.com")
+;;(define email "tchajed@gmail.com")
+(define email "chajed@wisc.edu")
 
 (define (named-meta name . content)
   (apply element 'meta name: name content: content))
@@ -16,9 +17,8 @@
  @title{Tej Chajed}
  @meta[charset: "UTF-8"]
  @named-meta["keywords"]{Tej,Chajed,MIT,computer science}
- @named-meta["description"]{@"I'm Tej Chajed, a final-year PhD student in PDOS
-  at MIT CSAIL working with Frans Kaashoek and Nickolai Zeldovich."}
- @named-meta["author"]{@"Tej Chajed <tchajed@mit.edu>"}
+ @named-meta["description"]{@"I'm Tej Chajed, an assistant professor at the University of Wisconsin-Madison."}
+ @named-meta["author"]{@"Tej Chajed <chajed@wisc.edu>"}
  @named-meta["viewport"]{width=device-width, initial-scale=1.0}
  @link[rel: "canonical" href: "https://www.chajed.io"]
  @link[rel: "stylesheet" href: "assets/main.css"]
@@ -55,16 +55,11 @@
  @div[class: "intro container"]{
   @div[class: "bio"]{
    @span[class: "email"]{@|email|}
-   @p{I'm Tej Chajed, a recent PhD graduate from the
-    @a[href: "https://pdos.csail.mit.edu/"]{PDOS} group at MIT, advised by Frans
-    Kaashoek and Nickolai Zeldovich. I work on formal verification of systems
-    software @entity['mdash] I implement systems and prove they do what they're
-    supposed to.}
-   @p{Before coming to MIT I was at UIUC, where I got undergraduate degrees
-    in Electrical Engineering and Computer Science.}
-   @p{@span[class: "bold"]{I'm excited to join the University of
-        Wisconsin-Madison as an assistant professor in Fall 2023!}
-        Before starting I'll be at VMware Research for a one-year postdoc.}
+   @p{I'm Tej Chajed, an assistant professor in Computer Science at the University of Wisconsin-Madison.
+   I work on formal verification of systems software @entity['mdash] I implement systems
+   and prove they do what they're supposed to.}
+   @p{Prior to joining UW-Madison I did a one-year postdoc at VMware Research, and before that I got my PhD from MIT in the PDOS group.}
+   @p{@span[class: "bold"]{I'm actively looking for new students! If you're interested in working with me please send me an email to chat about potential projects.}}
     @p{In case you're interested, you can find my @|research-statement|,
     @|teaching-statement|, and @|cv-link| from my faculty application materials.}
   }
@@ -90,11 +85,11 @@
   @a[href: "https://github.com/tchajed/coq-tricks"]{list of Coq tricks} for the
   advanced user and contributing to @a[href: "https://iris-project.org/"]{Iris}.}
 
- @p{I'm a communication Fellow in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
+@;{@p{I'm a communication Fellow in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
    Communication Lab}, where I help students with technical communication. If
   you're working on something where you think I could help, please reach out! I'm
   particularly excited about working on research papers and conference
-  presentations.}
+  presentations.}}
 
  @h2{Ph.D. thesis}
  @div[class: "pub"]{
