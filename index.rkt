@@ -127,6 +127,8 @@ crash-safe file system with sequential reasoning}}  @span[class: "pub-conference
  During my PhD I served on a conference program committee for PLDI 2022 and
  several artifact evaluation committees (AECs).
  @ul{
+  @li{@service-link["https://sysdw23.github.io/"]{SySDW 2023 PC}}
+  @li{@service-link["https://2023.ecoop.org/track/ecoop-2023-papers"]{ECOOP 2023 ERC}}
   @li{@service-link["https://popl23.sigplan.org/committee/CPP-2023-papers-program-committee"]{CPP 2023 PC}}
   @li{@service-link["https://popl23.sigplan.org/committee/POPL-2023-popl-research-papers-program-committee"]{POPL 2023 PC}}
   @li{@service-link["https://pldi22.sigplan.org/committee/pldi-2022-pldi-program-committee"]{PLDI 2022 PC}}
