@@ -71,7 +71,6 @@
        width: "200em"
        height: "200em"]
  }
-
  @h2{Research} @p{Even critical systems software has bugs @entity['mdash] for
   example, file systems have bugs that occasionally lead to users losing data. My
   research aims to write systems software that always does what it's supposed to.
@@ -87,11 +86,9 @@
   @a[href: "https://github.com/tchajed/coq-tricks"]{list of Coq tricks} for the
   advanced user and contributing to @a[href: "https://iris-project.org/"]{Iris}.}
 
-@;{@p{I'm a communication Fellow in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
-   Communication Lab}, where I help students with technical communication. If
-  you're working on something where you think I could help, please reach out! I'm
-  particularly excited about working on research papers and conference
-  presentations.}}
+@p{During my PhD, I was a communication Fellow in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
+   Communication Lab}, where I helped students with technical communication. I'm still passionate
+   about helping people with writing and presenting, so please reach out if you think I could help with something!}
 
  @h2{Ph.D. thesis}
  @div[class: "pub"]{
@@ -129,6 +126,7 @@ crash-safe file system with sequential reasoning}}  @span[class: "pub-conference
  During my PhD I served on a conference program committee for PLDI 2022 and
  several artifact evaluation committees (AECs).
  @ul{
+  @li{@service-link["https://pldi24.sigplan.org/track/pldi-2024-papers"]{PLDI 2024 PC}}
   @li{@service-link["https://sysdw23.github.io/"]{SySDW 2023 PC}}
   @li{@service-link["https://2023.ecoop.org/track/ecoop-2023-papers"]{ECOOP 2023 ERC}}
   @li{@service-link["https://popl23.sigplan.org/committee/CPP-2023-papers-program-committee"]{CPP 2023 PC}}
