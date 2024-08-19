@@ -83,7 +83,7 @@
   and @|goose-link|, a system for connecting the proofs to Go code.}
 
  @p{I do a lot of work on Coq-related things, including maintaining a
-  @a[href: "https://github.com/tchajed/coq-tricks"]{list of Coq tricks} for the
+  @a[href: "https://github.com/coq-community/coq-tricks"]{list of Coq tricks} for the
   advanced user and contributing to @a[href: "https://iris-project.org/"]{Iris}.}
 
 @p{During my PhD, I was a communication Fellow in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
