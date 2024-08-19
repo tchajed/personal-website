@@ -7,4 +7,4 @@ docs/index.html: index.rkt pubs.rkt
 	racket $< > $@
 
 serve:
-	http-server docs -a localhost -p 6061 -o
+	python3 -m http.server -d docs --bind localhost 6061
