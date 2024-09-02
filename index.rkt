@@ -62,8 +62,8 @@
    and prove they do what they're supposed to.}
    @p{Prior to joining UW-Madison I did a one-year postdoc at VMware Research, and before that I got my PhD from MIT in the PDOS group.}
    @p{@span[class: "bold"]{I'm actively looking for new students! If you're interested in working with me please set up a time to chat about potential projects.}}
-    @p{In case you're interested, you can find my @|research-statement|,
-    @|teaching-statement|, and @|cv-link| from my faculty application materials.}
+    @;@p{In case you're interested, you can find my @|research-statement|,
+    @;@|teaching-statement|, and @|cv-link| from my faculty application materials.}
   }
   @img[class: "portrait"
        alt: "Tej Chajed picture"
@@ -89,6 +89,11 @@
 @p{During my PhD, I was a communication Fellow in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
    Communication Lab}, where I helped students with technical communication. I'm still passionate
    about helping people with writing and presenting, so please reach out if you think I could help with something!}
+
+ @h2{Teaching}
+ @p{@span[class: "larger"]{CS 839: Systems verification (@a[href: "https://tchajed.github.io/sys-verif-fa24/"]{Fall 2024})}}
+ @p{@span[class: "larger"]{CS 537: Operating systems (@a[href: "https://pages.cs.wisc.edu/~oliphant/cs537-sp24/"]{Spring 2024})}}
+ @p{@span[class: "larger"]{CS 839: Protocol verification (Fall 2023)}}
 
  @h2{Ph.D. thesis}
  @div[class: "pub"]{
