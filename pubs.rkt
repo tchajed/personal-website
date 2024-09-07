@@ -150,6 +150,14 @@
 
          [pub-list
           (list
+            (mk-pub "anvil:osdi2024"
+                    #:title "Anvil: Verifying Liveness of Cluster Management Controllers"
+                    #:conference (osdi 2024)
+                    #:authors (list "Xudong Sun" "Wenjie Ma" "Jiawei Tyler Gu" "Zicheng Ma" tej jonh andrea "Oded Padon" "Lalith Suresh" "Adriana Szekeres" "Tianyin Xu"))
+            (mk-pub "kondo:osdi2024"
+                    #:title "Inductive Invariants That Spark Joy: Using Invariant Taxonomies to Streamline Distributed Protocol Proofs"
+                    #:conference (osdi 2024)
+                    #:authors (list "Tony Nuda Zhang" "Travis Hance" "Manos Kapritsos" tej "Bryan Parno"))
             (mk-pub "beyond-isolation:hotos2023"
                     #:title "Beyond isolation: OS verification as a foundation for correct applications"
                     #:conference (mk-conference
