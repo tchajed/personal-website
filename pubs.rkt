@@ -141,9 +141,17 @@
          [haogang "Haogang Chen"]
          [frans "M. Frans Kaashoek"]
          [nickolai "Nickolai Zeldovich"]
+         [jonh "Jon Howell"]
+         [andrea "Andrea Lattuada"]
 
          [pub-list
           (list
+            (mk-pub "beyond-isolation:hotos2023"
+                    #:title "Beyond isolation: OS verification as a foundation for correct applications"
+                    #:conference (mk-conference
+                                 "Workshop on Hot Topics in Operating Systems"
+                                 "HotOS 2023")
+                    #:authors (list "Matthias Brun" "Reto Achermann" tej jonh "Gerd Zellweger" andrea))
             (mk-pub "dbsp:vldb2023"
                     #:title "DBSP: Automatic Incremental View Maintenance for Rich Query Languages"
                     #:conference (vldb 2023)
