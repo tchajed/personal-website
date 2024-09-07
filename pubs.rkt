@@ -39,7 +39,11 @@
 (define (html/conf conference)
   (-> conf? any/c)
   (let* ([short (conf-short conference)]
-         [abbrv-conf (@abbr[title: (conf-fullname conference)]{@short})])
+         [long (conf-fullname conference)]
+         [abbrv-conf (if (equal? long "")
+                       @short
+                       (@abbr[title: long]{@short})
+                       )])
     @span[class: "pub-conference"]{
  (@(if (conf-to-appear? conference)
        @list{conditionally accepted to @abbrv-conf}
@@ -157,8 +161,14 @@
                     #:conference (vldb 2023)
                     #:authors (list "Mihai Budiu" tej "Frank McSherry" "Leonid Ryzhyk" "Val Tannen")
                     )
+            (mk-pub "tchajed-thesis"
+                    #:title "Verifying a concurrent, crash-safe file system with sequential reasoning"
+                    #:conference (conf "" "Ph.D. Thesis, MIT, 2022" false)
+                    #:slides? #t
+                    #:authors (list tej))
            (mk-pub "daisy-nfs:osdi2022"
-                   #:title "Verifying the DaisyNFS concurrent and crash-safe file system with sequential reasoning"
+                   #:title @list{Verifying the DaisyNFS concurrent and crash-safe file system@br @;
+                                 with sequential reasoning}
                    #:conference (osdi 2022)
                    #:slides? #t
                    #:authors (list tej joe "Mark Theng" frans nickolai)

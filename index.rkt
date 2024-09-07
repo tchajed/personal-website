@@ -95,28 +95,6 @@
  @p{@span[class: "larger"]{CS 537: Operating systems (@a[href: "https://pages.cs.wisc.edu/~oliphant/cs537-sp24/"]{Spring 2024})}}
  @p{@span[class: "larger"]{CS 839: Protocol verification (Fall 2023)}}
 
- @h2{Ph.D. thesis}
- @div[class: "pub"]{
-  @div[class: "pub-header container"]{
-   @div{
-    @span[class: "pub-title"]{
-     @file-link[@~a{papers/tchajed-thesis.pdf}]{Verifying a concurrent,
-crash-safe file system with sequential reasoning}}  @span[class: "pub-conference"]{(Ph.D. thesis, MIT, May 2022)
-   }}
-   @nbsp
-   @div[class: "pub-links"]{
-    @file-link[@~a{papers/tchajed-thesis.pdf}]{
-     @img[title: "Paper PDF" 'alt: "paper icon"
-          src: "assets/file.svg" 'height: 16 'width: 16]
-    }
-    @file-link[@~a{papers/tchajed-thesis-defense-slides.pdf}]{
-     @img[title: "Slides" 'alt: "slides icon"
-          src: "assets/slides.svg" 'height: 16 'width: 16]
-    }
-   }
- }
-  @span[class: "self-author"]{Tej Chajed}}
-
  @h2{Publications}
  @pubs
 
