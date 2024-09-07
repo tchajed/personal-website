@@ -147,13 +147,20 @@
          [nickolai "Nickolai Zeldovich"]
          [jonh "Jon Howell"]
          [andrea "Andrea Lattuada"]
+         [oded "Oded Padon"]
 
          [pub-list
           (list
+            (mk-pub "absint-fo:cav2024"
+                    #:title "Efficient Implementation of an Abstract Domain of Quantified First-Order Formulas"
+                    #:conference (mk-conference
+                                   "Computer Aided Verification"
+                                   "CAV 2024")
+                    #:authors (list "Eden Frenkel" tej oded "Sharon Shoham"))
             (mk-pub "anvil:osdi2024"
                     #:title "Anvil: Verifying Liveness of Cluster Management Controllers"
                     #:conference (osdi 2024)
-                    #:authors (list "Xudong Sun" "Wenjie Ma" "Jiawei Tyler Gu" "Zicheng Ma" tej jonh andrea "Oded Padon" "Lalith Suresh" "Adriana Szekeres" "Tianyin Xu"))
+                    #:authors (list "Xudong Sun" "Wenjie Ma" "Jiawei Tyler Gu" "Zicheng Ma" tej jonh andrea oded "Lalith Suresh" "Adriana Szekeres" "Tianyin Xu"))
             (mk-pub "kondo:osdi2024"
                     #:title "Inductive Invariants That Spark Joy: Using Invariant Taxonomies to Streamline Distributed Protocol Proofs"
                     #:conference (osdi 2024)
