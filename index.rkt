@@ -101,14 +101,13 @@
  @h2{Teaching}
  I helped create 6.826 (Principles of Computer Systems), a class on systems
  verification, and in particular I created the lab assignments. I was a TA for
- the class in @a[href: "https://6826.csail.mit.edu/2020/"]{Fall 2020}, @a[href:
-                                                                          "https://6826.csail.mit.edu/2019/"]{Fall 2019}, and @a[href:
-                                                                                                                                 "https://6826.csail.mit.edu/2017/"]{Fall 2017}.
+ the class in @a[href: "https://6826.csail.mit.edu/2020/"]{Fall 2020},
+ @a[href: "https://6826.csail.mit.edu/2019/"]{Fall 2019}, and
+ @a[href: "https://6826.csail.mit.edu/2017/"]{Fall 2017}.
 
  @h2{Service}
- During my PhD I served on a conference program committee for PLDI 2022 and
- several artifact evaluation committees (AECs).
  @ul{
+  @li{@service-link["https://popl25.sigplan.org/home/dafny-2025"]{Dafny 2025 PC}}
   @li{@service-link["https://pldi24.sigplan.org/track/pldi-2024-papers"]{PLDI 2024 PC}}
   @li{@service-link["https://sysdw23.github.io/"]{SySDW 2023 PC}}
   @li{@service-link["https://2023.ecoop.org/track/ecoop-2023-papers"]{ECOOP 2023 ERC}}
