@@ -151,6 +151,12 @@
 
          [pub-list
           (list
+            (mk-pub "shadow-fs:hotstorage2024"
+                    #:title "Shadow Filesystems: Recovering from Filesystem Runtime Errors via Robust Alternative Execution"
+                    #:conference (mk-conference
+                                   "ACM Workshop on Hot Topics in Storage and File Systems"
+                                   "HotStorage 2024")
+                    #:authors (list "Jing Liu" "Xiangpeng Hao" "Andrea Arpaci-Dusseau" "Remzi Arpaci-Dusseau" tej))
             (mk-pub "absint-fo:cav2024"
                     #:title "Efficient Implementation of an Abstract Domain of Quantified First-Order Formulas"
                     #:conference (mk-conference
