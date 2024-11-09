@@ -95,15 +95,14 @@
  @p{@span[class: "larger"]{CS 537: Operating systems (@a[href: "https://pages.cs.wisc.edu/~oliphant/cs537-sp24/"]{Spring 2024})}}
  @p{@span[class: "larger"]{CS 839: Protocol verification (Fall 2023)}}
 
- @h2{Publications}
- @pubs
-
- @h2{Teaching}
- I helped create 6.826 (Principles of Computer Systems), a class on systems
+ As a graduate student, I helped create 6.826 (Principles of Computer Systems), a class on systems
  verification, and in particular I created the lab assignments. I was a TA for
  the class in @a[href: "https://6826.csail.mit.edu/2020/"]{Fall 2020},
  @a[href: "https://6826.csail.mit.edu/2019/"]{Fall 2019}, and
  @a[href: "https://6826.csail.mit.edu/2017/"]{Fall 2017}.
+
+ @h2{Publications}
+ @pubs
 
  @h2{Service}
  @ul{
