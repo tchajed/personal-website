@@ -151,6 +151,26 @@
 
          [pub-list
           (list
+            (mk-pub "verus:sosp2024"
+                    #:title "Verus: A Practical Foundation for Systems Verification"
+                    #:conference (sosp 2024)
+                    #:authors (list
+                                "Andrea Lattuada"
+                                "Travis Hance"
+                                "Jay Bosamiya"
+                                "Matthias Brun"
+                                "Chanhee Cho"
+                                "Hayley LeBlanc"
+                                "Pranav Srinivasan"
+                                "Reto Achermann"
+                                tej
+                                "Chris Hawblitzel"
+                                "Jon Howell"
+                                "Jacob R. Lorch"
+                                "Oded Padon"
+                                "Bryan Parno"
+                                ))
+
             (mk-pub "shadow-fs:hotstorage2024"
                     #:title "Shadow Filesystems: Recovering from Filesystem Runtime Errors via Robust Alternative Execution"
                     #:conference (mk-conference
