@@ -91,6 +91,8 @@
    about helping people with writing and presenting, so please reach out if you think I could help with something!}
 
  @h2{Teaching}
+ @p{@span[class: "larger"]{CS 839: Systems verification (Fall 2025)}}
+ @p{@span[class: "larger"]{@em{Teaching release} (Spring 2025)}}
  @p{@span[class: "larger"]{CS 839: Systems verification (@a[href: "https://tchajed.github.io/sys-verif-fa24/"]{Fall 2024})}}
  @p{@span[class: "larger"]{CS 537: Operating systems (@a[href: "https://pages.cs.wisc.edu/~oliphant/cs537-sp24/"]{Spring 2024})}}
  @p{@span[class: "larger"]{CS 839: Protocol verification (Fall 2023)}}
