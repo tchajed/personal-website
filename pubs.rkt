@@ -151,6 +151,10 @@
 
          [pub-list
           (list
+            (mk-pub "basilisk:osdi2025"
+                    #:title "Basilisk: Using Provenance Invariants to Automate Proofs of Undecidable Protocols"
+                    #:conference (osdi 2025)
+                    #:authors (list "Tony Nuda Zhang" "Keshav Singh" tej "Manos Kapritsos" "Bryan Parno"))
             (mk-pub "verus:sosp2024"
                     #:title "Verus: A Practical Foundation for Systems Verification"
                     #:conference (sosp 2024)
