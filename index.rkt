@@ -56,7 +56,7 @@
   @div[class: "bio"]{
    @span[class: "larger"]{@|email|}
    @br{}
-   @span[class: "larger"]{Computer Sciences 7361}
+   @span[class: "larger"]{Morgridge Hall 7572}
    @p{I'm Tej Chajed, an assistant professor in Computer Science at the University of Wisconsin-Madison.
    I work on formal verification of systems software @entity['mdash] I implement systems
    and prove they do what they're supposed to.}
