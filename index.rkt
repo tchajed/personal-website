@@ -61,7 +61,7 @@
    I work on formal verification of systems software @entity['mdash] I implement systems
    and prove they do what they're supposed to.}
    @p{Prior to joining UW-Madison I did a one-year postdoc at VMware Research, and before that I got my PhD from MIT in the PDOS group.}
-   @p{@span[class: "bold"]{I'm actively looking for new students! If you're interested in working with me please set up a time to chat about potential projects.}}
+   @;@p{@span[class: "bold"]{I'm actively looking for new students! If you're interested in working with me please set up a time to chat about potential projects.}}
     @;@p{In case you're interested, you can find my @|research-statement|,
     @;@|teaching-statement|, and @|cv-link| from my faculty application materials.}
   }
