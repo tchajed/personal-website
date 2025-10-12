@@ -108,6 +108,9 @@
 
  @h2{Service}
  @ul{
+  @li{@service-link["https://sigops.org/s/conferences/sosp/2026/organizers.html"]{SOSP 2026 Light PC}}
+  @li{@service-link["https://icfp26.sigplan.org/"]{ICFP 2026 PC}}
+  @li{@service-link["https://popl26.sigplan.org/home/prisc-2026"]{PriSC 2026 PC}}
   @li{@service-link["https://popl25.sigplan.org/home/dafny-2025"]{Dafny 2025 PC}}
   @li{@service-link["https://pldi24.sigplan.org/track/pldi-2024-papers"]{PLDI 2024 PC}}
   @li{@service-link["https://sysdw23.github.io/"]{SySDW 2023 PC}}
