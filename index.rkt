@@ -91,6 +91,7 @@
    about helping people with writing and presenting, so please reach out if you think I could help with something!}
 
  @h2{Teaching}
+ @p{@span[class: "larger"]{CS 537: Operating systems (@a[href: "https://canvas.wisc.edu/courses/485415"]{Spring 2026})}}
  @p{@span[class: "larger"]{CS 839: Systems verification (@a[href: "https://tchajed.github.io/sys-verif-fa25/"]{Fall 2025})}}
  @p{@span[class: "larger"]{@em{Teaching release} (Spring 2025)}}
  @p{@span[class: "larger"]{CS 839: Systems verification (@a[href: "https://tchajed.github.io/sys-verif-fa24/"]{Fall 2024})}}
