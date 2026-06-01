@@ -17,7 +17,7 @@
  @title{Tej Chajed}
  @meta[charset: "UTF-8"]
  @named-meta["keywords"]{Tej,Chajed,MIT,computer science}
- @named-meta["description"]{@"I'm Tej Chajed, an assistant professor at the University of Wisconsin-Madison."}
+ @named-meta["description"]{@"I'm Tej Chajed. I work on formal verification at Theorem."}
  @named-meta["author"]{@"Tej Chajed <chajed@wisc.edu>"}
  @named-meta["viewport"]{width=device-width, initial-scale=1.0}
  @link[rel: "canonical" href: "https://www.chajed.io"]
@@ -57,10 +57,12 @@
    @span[class: "larger"]{@|email|}
    @br{}
    @span[class: "larger"]{Morgridge Hall 7572}
-   @p{I'm Tej Chajed, an assistant professor in Computer Science at the University of Wisconsin-Madison.
-   I work on formal verification of systems software @entity['mdash] I implement systems
-   and prove they do what they're supposed to.}
-   @p{Prior to joining UW-Madison I did a one-year postdoc at VMware Research, and before that I got my PhD from MIT in the PDOS group.}
+   @p{I'm Tej Chajed, and I'm the Founding Research Scientist at @a[href:
+   "https://theorem.dev"]{Theorem}. I work on using AI to enable formal
+   verification at scale.}
+   @p{I was an assistant professor in Computer Science at the University of
+    Wisconsin-Madison for three years before I moved to industry.}
+   @p{Prior to joining UW-Madison, I did a one-year postdoc at VMware Research, and before that I got my PhD from MIT in the PDOS group.}
    @;@p{@span[class: "bold"]{I'm actively looking for new students! If you're interested in working with me please set up a time to chat about potential projects.}}
     @;@p{In case you're interested, you can find my @|research-statement|,
     @;@|teaching-statement|, and @|cv-link| from my faculty application materials.}
@@ -71,24 +73,17 @@
        width: "200em"
        height: "200em"]
  }
- @h2{Research} @p{Even critical systems software has bugs @entity['mdash] for
-  example, file systems have bugs that occasionally lead to users losing data. My
-  research aims to write systems software that always does what it's supposed to.
-  We do this with formal verification: we write a precise specification of what
-  the system is supposed to do and prove that the implementation meets the
-  specification. My research has culminated in @|daisy-nfsd-link|, a verified,
-  concurrent file system that gets good performance.  The path to verifying
-  DaisyNFS involved developing new frameworks and tools, including
-  @|perennial-link|, a framework for reasoning about crash safety and concurrency,
-  and @|goose-link|, a system for connecting the proofs to Go code.}
+ @h2{Research} @p{I helped develop and continue to provide technical leadership
+ for @|perennial-link| and Goose, a system for verifying Go code that supports
+ concurrency and distributed systems. I do a lot of work on Rocq things, including maintaining a
+@a[href: "https://github.com/rocq-community/rocq-tricks"]{list of Rocq tricks} for the
+advanced user and contributing to @a[href: "https://iris-project.org/"]{Iris}.}
 
- @p{I do a lot of work on Rocq things, including maintaining a
-  @a[href: "https://github.com/rocq-community/rocq-tricks"]{list of Rocq tricks} for the
-  advanced user and contributing to @a[href: "https://iris-project.org/"]{Iris}.}
-
-@p{During my PhD, I was a communication Fellow in the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
-   Communication Lab}, where I helped students with technical communication. I'm still passionate
-   about helping people with writing and presenting, so please reach out if you think I could help with something!}
+@p{I'm passionate about teaching and technical communication. I was a Fellow in
+@a[href: "https://mtle.wisc.edu/"]{MTLE} at UW-Madison, where I learned a great
+deal about effective teaching. During my PhD, I was a communication Fellow in
+the @a[href: "https://mitcommlab.mit.edu/eecs/"]{EECS
+Communication Lab}, where I helped students with technical communication.}
 
  @h2{Teaching}
  @p{@span[class: "larger"]{CS 537: Operating systems (@a[href: "https://canvas.wisc.edu/courses/485415"]{Spring 2026})}}
