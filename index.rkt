@@ -57,7 +57,7 @@
    @span[class: "larger"]{@|email|}
    @br{}
    @span[class: "larger"]{Morgridge Hall 7572}
-   @p{I'm Tej Chajed, and I'm the Founding Research Scientist at @a[href:
+   @p{I'm Tej Chajed, and I'm a Research Scientist at @a[href:
    "https://theorem.dev"]{Theorem}. I work on using AI to enable formal
    verification at scale.}
    @p{I was an assistant professor in Computer Science at the University of
