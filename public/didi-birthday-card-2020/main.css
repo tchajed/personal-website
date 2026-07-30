@@ -1,0 +1,27 @@
+html {
+  height: auto !important;
+  padding-bottom: 400px !important;
+}
+body {
+  margin: 40px auto;
+  max-width: 800px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #444;
+  padding: 0 10px;
+  font-family: Open Sans;
+}
+p {
+  text-align: center;
+}
+div {
+  margin-top: 130px;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

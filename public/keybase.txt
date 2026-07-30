@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/tchajed
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.chajed.io
+  * I am tchajed (https://keybase.io/tchajed) on keybase.
+  * I have a public key ASBxd3t8HGdTAbKbOqOp5jrcJk3pusQbgsd5umQdsV0NTgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012071777b7c1c675301b29b3aa3a9e63adc264de9bac41b82c779ba641db15d0d4e0a",
+      "host": "keybase.io",
+      "kid": "012071777b7c1c675301b29b3aa3a9e63adc264de9bac41b82c779ba641db15d0d4e0a",
+      "uid": "9b31a2d3c8c8fef010f243bed98c5519",
+      "username": "tchajed"
+    },
+    "merkle_root": {
+      "ctime": 1568647461,
+      "hash": "0451081c46a8e16dc01c4fc4ef0d5e72d298fcdb99f27e7bf7216da999a14edc480635a70ed9c7adf110cee106aca5c0d7b34b14b42daa09a868058268c05be0",
+      "hash_meta": "7dd729e0e8a94877dcd65d60d9e84e5af8a702c599053ed8486839259227fd1b",
+      "seqno": 7472249
+    },
+    "service": {
+      "entropy": "LSUkRfSaXffBJZEN9hbHn/OS",
+      "hostname": "www.chajed.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.4.2"
+  },
+  "ctime": 1568647467,
+  "expire_in": 504576000,
+  "prev": "b05c02e3ee8c1d75438a6cef20e5cf7a590c32fd50bb48e4e903242c7987d162",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgcXd7fBxnUwGymzqjqeY63CZN6brEG4LHebpkHbFdDU4Kp3BheWxvYWTESpcCB8QgsFwC4+6MHXVDimzvIOXPelkMMv1Qu0jk6QMkLHmH0WLEIOhSO3vVmixGrqbP7I2J+d3Xbv1opUmQvcvdG6wpwvq1AgHCo3NpZ8RAPnohvjZjXoSiK8CPYqixdi+81dnPh+nlMMEOzpo4qT683dCOOuEYUeEmBMiHf8mpcmBtEcedEXnwgETHQtz1CahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIADVKSsYPT3lV2ye7Jb4N0CCB9OShH7RGqYLN61j8myio3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tchajed
+
+==================================================================
