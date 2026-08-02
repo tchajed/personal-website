@@ -18,13 +18,17 @@
       <div class="notebook">
         <header class="site-header">
           <div class="identity">
-            <h1 data-annot>Tej Chajed</h1>
-            <p class="meta">Research Scientist, Theorem<br /><a href="mailto:chajed@wisc.edu">chajed@wisc.edu</a> · <a href="https://github.com/tchajed">github.com/tchajed</a></p>
+            <h1>Tej Chajed</h1>
+            <p class="meta">Research Scientist, Theorem</p>
+            <div class="contact-links" aria-label="Contact and profiles">
+              <a href="mailto:tej@theorem.dev"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18v13H3zM3.5 6l8.5 7 8.5-7" /></svg><span>tej@theorem.dev</span></a>
+              <a href="https://github.com/tchajed"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.4 9.4 0 0 0-3 18.3c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.3-2.3-.3-4.6-1.1-4.6-4.7 0-1 .4-1.9 1-2.5-.1-.3-.4-1.3.1-2.5 0 0 .8-.3 2.6 1a9 9 0 0 1 4.8 0c1.8-1.2 2.6-1 2.6-1 .5 1.2.2 2.2.1 2.5.6.6 1 1.5 1 2.5 0 3.6-2.3 4.4-4.6 4.7.4.3.7 1 .7 1.9v2.8c0 .3.2.6.7.5A9.4 9.4 0 0 0 12 2.8Z" /></svg><span>@tchajed</span></a>
+              <a href="https://orcid.org/0000-0002-9889-4828"><svg class="orcid-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M8.1 7.4h1.3v1.3H8.1zm0 2.4h1.3v6.8H8.1zm3 0h3.4c2.5 0 4.1 1.4 4.1 3.4s-1.6 3.4-4.1 3.4h-3.4zm1.3 1.2v4.4h2c1.8 0 2.8-.9 2.8-2.2S16.2 11 14.4 11z" /></svg><span>ORCID</span></a>
+            </div>
           </div>
           <figure class="portrait-card">
             <span class="tape" aria-hidden="true"></span>
             <img src="/assets/portrait.jpg" alt="Tej Chajed" width="152" height="184" />
-            <figcaption>tej, 2024</figcaption>
           </figure>
         </header>
 
@@ -32,79 +36,78 @@
           <div class="copy">
             <p>I'm Tej Chajed, and I'm a Research Scientist at <a href="https://theorem.dev">Theorem</a>. I work on using AI to enable formal verification at scale.</p>
             <p>I was an assistant professor in Computer Science at the University of Wisconsin–Madison for three years before I moved to industry. Prior to that I did a one-year postdoc at VMware Research, and before that I got my PhD from MIT in the PDOS group.</p>
-            <p class="location">MORGRIDGE HALL 7572</p>
           </div>
-          <aside class="note rotate-left">“Tej” rhymes with page, and Chajed is pronounced as written — CHA-jed.</aside>
+          <aside class="note rotate-left">“Tej” rhymes with "page"</aside>
         </div>
 
         <section>
-          <h2 data-annot>Research</h2>
+          <h2>Research</h2>
           <div class="row">
             <div class="copy">
-              <p>I helped develop and continue to provide technical leadership for <a href="https://github.com/mit-pdos/perennial">Perennial</a> and Goose, a system for verifying Go code that supports concurrency and distributed systems. I do a lot of work on Rocq things, including maintaining a <a href="https://github.com/rocq-community/rocq-tricks">list of Rocq tricks</a> for the advanced user and contributing to <a href="https://iris-project.org/">Iris</a>.</p>
+              <p>I helped develop <a href="https://github.com/mit-pdos/perennial">Perennial</a> and Goose, a system for verifying Go code that supports concurrency and distributed systems. I do a lot of work on Rocq things, including maintaining a <a href="https://github.com/rocq-community/rocq-tricks">list of Rocq tricks</a> for the advanced user and contributing to <a href="https://iris-project.org/">Iris</a>.</p>
               <p>I'm passionate about teaching and technical communication. I was a Fellow in <a href="https://mtle.wisc.edu/">MTLE</a> at UW–Madison, where I learned a great deal about effective teaching. During my PhD, I was a communication Fellow in the <a href="https://mitcommlab.mit.edu/eecs/">EECS Communication Lab</a>, where I helped students with technical communication.</p>
             </div>
-            <aside class="note rotate-right">Perennial started as a proof about one file system and grew into a logic. That happens a lot.</aside>
+            <aside class="note rotate-right">I'm always happy to talk about technical communication!</aside>
           </div>
         </section>
 
         <section>
           <div class="section-heading">
-            <h2 data-annot>Selected publications</h2>
-            <button class="outline-button" id="open-papers" type="button">Search all papers →</button>
+            <h2>Selected publications</h2>
+            <a class="all-papers-link" href="/publications/">All papers</a>
           </div>
           <div class="row">
             <ol class="publication-list" id="selected-publications"></ol>
-            <aside class="note rotate-left">Four out of twenty-three. The rest are one click away, and every one of them has a free PDF.</aside>
           </div>
         </section>
 
         <section>
-          <h2 data-annot>Software</h2>
+          <h2>Software</h2>
           <div class="row">
             <ul class="project-list">
               <li><a href="https://github.com/mit-pdos/perennial">perennial</a><span>a system for verifying Go programs with concurrency</span></li>
               <li><a href="https://github.com/tchajed/iris-simp-lang">iris-simp-lang</a><span>instantiating Iris for a simple programming language</span></li>
               <li><a href="https://github.com/tchajed/botc-tools">botc-tools</a><span>storyteller tools for running Blood on the Clocktower</span></li>
             </ul>
-            <aside class="note rotate-right">Two proof assistants and one board game. I'll let you guess which gets the most issues.</aside>
           </div>
         </section>
 
         <section>
-          <h2 data-annot>Teaching</h2>
+          <h2>Teaching</h2>
           <div class="row">
             <div class="copy teaching">
               <ul>
-                <li><strong>CS 537</strong> Operating systems — <a href="https://canvas.wisc.edu/courses/485415">Spring 2026</a>, <a href="https://pages.cs.wisc.edu/~oliphant/cs537-sp24/">Spring 2024</a></li>
-                <li><strong>CS 839</strong> Systems verification — <a href="https://tchajed.github.io/sys-verif-fa25/">Fall 2025</a>, <a href="https://tchajed.github.io/sys-verif-fa24/">Fall 2024</a></li>
-                <li><strong>CS 839</strong> Protocol verification — Fall 2023</li>
-                <li class="muted"><em>Teaching release</em> — Spring 2025</li>
+                <li><strong>Spring 2026</strong> — <a href="https://canvas.wisc.edu/courses/485415">CS 537, Operating systems</a></li>
+                <li><strong>Fall 2025</strong> — <a href="https://tchajed.github.io/sys-verif-fa25/">CS 839, Systems verification</a></li>
+                <li class="muted"><strong>Spring 2025</strong> — <em>Teaching release</em></li>
+                <li><strong>Fall 2024</strong> — <a href="https://tchajed.github.io/sys-verif-fa24/">CS 839, Systems verification</a></li>
+                <li><strong>Spring 2024</strong> — <a href="https://pages.cs.wisc.edu/~oliphant/cs537-sp24/">CS 537, Operating systems</a></li>
+                <li><strong>Fall 2023</strong> — CS 839, Protocol verification</li>
               </ul>
               <p>As a graduate student I helped create <strong>6.826</strong> (Principles of Computer Systems) at MIT, where I built the lab assignments and TA'd in <a href="https://6826.csail.mit.edu/2020/">Fall 2020</a>, <a href="https://6826.csail.mit.edu/2019/">Fall 2019</a>, and <a href="https://6826.csail.mit.edu/2017/">Fall 2017</a>.</p>
             </div>
-            <aside class="note rotate-left">Teaching a proof is the fastest way to discover you didn't understand it.</aside>
           </div>
         </section>
 
         <section>
-          <h2 data-annot>Service</h2>
-          <div class="service-links">
-            <a href="https://sigops.org/s/conferences/sosp/2026/organizers.html">SOSP 2026 PC</a><a href="https://icfp26.sigplan.org/">ICFP 2026 PC</a><a href="https://popl26.sigplan.org/home/prisc-2026">PriSC 2026 PC</a><a href="https://popl25.sigplan.org/home/dafny-2025">Dafny 2025 PC</a><a href="https://pldi24.sigplan.org/track/pldi-2024-papers">PLDI 2024 PC</a><a href="https://sysdw23.github.io/">SySDW 2023 PC</a><a href="https://2023.ecoop.org/track/ecoop-2023-papers">ECOOP 2023 ERC</a><a href="https://popl23.sigplan.org/committee/CPP-2023-papers-program-committee">CPP 2023 PC</a><a href="https://popl23.sigplan.org/committee/POPL-2023-popl-research-papers-program-committee">POPL 2023 PC</a><a href="https://pldi22.sigplan.org/committee/pldi-2022-pldi-program-committee">PLDI 2022 PC</a><a href="https://popl22.sigplan.org/committee/POPL-2022-artifact-evaluation-artifact-evaluation-comittee">POPL 2022 AEC</a><a href="https://eurodw21.github.io/">EuroDW 2021 PC</a><a href="https://popl21.sigplan.org/track/POPL-2021-Artifact-Evaluation">POPL 2021 AEC</a><a href="https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts">PLDI 2020 AEC</a><a href="https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation">POPL 2020 AEC</a><a href="https://sysartifacts.github.io/">SOSP 2019 AEC</a>
+          <h2>Service</h2>
+          <div class="row service-row">
+            <div class="service-links">
+              <a href="https://sigops.org/s/conferences/sosp/2026/organizers.html">SOSP 2026 PC</a><a href="https://icfp26.sigplan.org/">ICFP 2026 PC</a><a href="https://popl26.sigplan.org/home/prisc-2026">PriSC 2026 PC</a><a href="https://popl25.sigplan.org/home/dafny-2025">Dafny 2025 PC</a><a href="https://pldi24.sigplan.org/track/pldi-2024-papers">PLDI 2024 PC</a><a href="https://sysdw23.github.io/">SySDW 2023 PC</a><a href="https://2023.ecoop.org/track/ecoop-2023-papers">ECOOP 2023 ERC</a><a href="https://popl23.sigplan.org/committee/CPP-2023-papers-program-committee">CPP 2023 PC</a><a href="https://popl23.sigplan.org/committee/POPL-2023-popl-research-papers-program-committee">POPL 2023 PC</a><a href="https://pldi22.sigplan.org/committee/pldi-2022-pldi-program-committee">PLDI 2022 PC</a><a href="https://popl22.sigplan.org/committee/POPL-2022-artifact-evaluation-artifact-evaluation-comittee">POPL 2022 AEC</a><a href="https://eurodw21.github.io/">EuroDW 2021 PC</a><a href="https://popl21.sigplan.org/track/POPL-2021-Artifact-Evaluation">POPL 2021 AEC</a><a href="https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts">PLDI 2020 AEC</a><a href="https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation">POPL 2020 AEC</a><a href="https://sysartifacts.github.io/">SOSP 2019 AEC</a>
+            </div>
+            <aside class="note rotate-left">I've reviewed a few papers</aside>
           </div>
         </section>
 
-        <footer><span><a href="mailto:chajed@wisc.edu">chajed@wisc.edu</a> · <a href="https://github.com/tchajed">github</a></span><span class="signoff">written by hand, mostly</span></footer>
+        <footer><span><a href="mailto:tej@theorem.dev">tej@theorem.dev</a> · <a href="https://github.com/tchajed">@tchajed</a> · <a href="https://orcid.org/0000-0002-9889-4828">ORCID</a></span></footer>
       </div>
     </main>
 
-    <dialog id="papers-dialog" aria-labelledby="papers-title">
-      <div class="dialog-inner">
-        <div class="dialog-heading"><h2 id="papers-title">All papers</h2><button class="outline-button" id="close-papers" type="button">Close ✕</button></div>
-        <label class="sr-only" for="paper-search">Search papers</label>
-        <input id="paper-search" type="search" placeholder="title, venue, year, coauthor…" autocomplete="off" />
-        <p class="result-count" aria-live="polite"></p>
-        <ol class="publication-list all-publications"></ol>
+    <dialog id="bibtex-dialog" aria-labelledby="bibtex-title">
+      <div class="bibtex-dialog-inner">
+        <div class="dialog-heading"><h2 id="bibtex-title">BibTeX</h2><button class="outline-button" id="close-bibtex" type="button">Close ✕</button></div>
+        <pre><code id="bibtex-code"></code></pre>
+        <button class="outline-button copy-bibtex" id="copy-bibtex" type="button">Copy BibTeX</button>
       </div>
     </dialog>
     <script type="module" src="/src/main.js"></script>
