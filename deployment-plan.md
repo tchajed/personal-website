@@ -5,7 +5,7 @@
 Deploy this Vite site from `tchajed/personal-website` to Cloudflare Pages, serve it at
 `https://www.chajed.io`, and redirect `https://chajed.io/*` to the matching `www` URL.
 
-The site currently builds successfully with `npm run build`; the output directory is `dist`.
+The site currently builds successfully with `bun run build`; the output directory is `dist`.
 
 ## Important sequencing
 
@@ -48,7 +48,7 @@ In the Cloudflare dashboard:
    | Project name | `personal-website` (or another available name) |
    | Production branch | `main` |
    | Framework preset | `Vite` |
-   | Build command | `npm run build` |
+   | Build command | `bun run build` |
    | Build output directory | `dist` |
    | Root directory | `/` |
 
