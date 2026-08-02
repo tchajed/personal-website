@@ -1,4 +1,3 @@
-import "./style.css";
 import { downloadAllBibtex, initializeBibtexDialog, papers, renderPublications } from "./publications.js";
 
 const list = document.querySelector(".all-publications");

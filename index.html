@@ -7,6 +7,7 @@
     <meta name="author" content="Tej Chajed" />
     <meta name="theme-color" content="#faf7f1" />
     <link rel="canonical" href="https://www.chajed.io/" />
+    <link rel="stylesheet" href="/src/style.css" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✎</text></svg>" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,9 +22,9 @@
             <h1>Tej Chajed</h1>
             <p class="meta">Research Scientist, Theorem</p>
             <div class="contact-links" aria-label="Contact and profiles">
-              <a href="mailto:tej@theorem.dev"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18v13H3zM3.5 6l8.5 7 8.5-7" /></svg><span>tej@theorem.dev</span></a>
-              <a href="https://github.com/tchajed"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.4 9.4 0 0 0-3 18.3c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.3-2.3-.3-4.6-1.1-4.6-4.7 0-1 .4-1.9 1-2.5-.1-.3-.4-1.3.1-2.5 0 0 .8-.3 2.6 1a9 9 0 0 1 4.8 0c1.8-1.2 2.6-1 2.6-1 .5 1.2.2 2.2.1 2.5.6.6 1 1.5 1 2.5 0 3.6-2.3 4.4-4.6 4.7.4.3.7 1 .7 1.9v2.8c0 .3.2.6.7.5A9.4 9.4 0 0 0 12 2.8Z" /></svg><span>@tchajed</span></a>
-              <a href="https://orcid.org/0000-0002-9889-4828"><svg class="orcid-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M8.1 7.4h1.3v1.3H8.1zm0 2.4h1.3v6.8H8.1zm3 0h3.4c2.5 0 4.1 1.4 4.1 3.4s-1.6 3.4-4.1 3.4h-3.4zm1.3 1.2v4.4h2c1.8 0 2.8-.9 2.8-2.2S16.2 11 14.4 11z" /></svg><span>ORCID</span></a>
+              <a href="mailto:tej@theorem.dev"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18v13H3zM3.5 6l8.5 7 8.5-7" /></svg><span>tej@theorem.dev</span></a>
+              <a href="https://github.com/tchajed"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.4 9.4 0 0 0-3 18.3c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.3-2.3-.3-4.6-1.1-4.6-4.7 0-1 .4-1.9 1-2.5-.1-.3-.4-1.3.1-2.5 0 0 .8-.3 2.6 1a9 9 0 0 1 4.8 0c1.8-1.2 2.6-1 2.6-1 .5 1.2.2 2.2.1 2.5.6.6 1 1.5 1 2.5 0 3.6-2.3 4.4-4.6 4.7.4.3.7 1 .7 1.9v2.8c0 .3.2.6.7.5A9.4 9.4 0 0 0 12 2.8Z" /></svg><span>@tchajed</span></a>
+              <a href="https://orcid.org/0000-0002-9889-4828"><svg class="orcid-icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M8.1 7.4h1.3v1.3H8.1zm0 2.4h1.3v6.8H8.1zm3 0h3.4c2.5 0 4.1 1.4 4.1 3.4s-1.6 3.4-4.1 3.4h-3.4zm1.3 1.2v4.4h2c1.8 0 2.8-.9 2.8-2.2S16.2 11 14.4 11z" /></svg><span>ORCID</span></a>
             </div>
           </div>
           <figure class="portrait-card">
@@ -40,29 +41,39 @@
           <aside class="note rotate-left">“Tej” rhymes with "page"</aside>
         </div>
 
-        <section>
-          <h2>Research</h2>
+        <section class="decorated-section art-research">
+          <div class="section-title-row">
+            <h2>Research</h2>
+            <img class="section-art" src="/assets/monsters/research.png" alt="" width="242" height="183" loading="lazy" aria-hidden="true" />
+          </div>
           <div class="row">
             <div class="copy">
               <p>I helped develop <a href="https://github.com/mit-pdos/perennial">Perennial</a> and Goose, a system for verifying Go code that supports concurrency and distributed systems. I do a lot of work on Rocq things, including maintaining a <a href="https://github.com/rocq-community/rocq-tricks">list of Rocq tricks</a> for the advanced user and contributing to <a href="https://iris-project.org/">Iris</a>.</p>
               <p>I'm passionate about teaching and technical communication. I was a Fellow in <a href="https://mtle.wisc.edu/">MTLE</a> at UW–Madison, where I learned a great deal about effective teaching. During my PhD, I was a communication Fellow in the <a href="https://mitcommlab.mit.edu/eecs/">EECS Communication Lab</a>, where I helped students with technical communication.</p>
             </div>
-            <aside class="note rotate-right">I'm always happy to talk about technical communication!</aside>
+            <aside class="communication-note">
+              <img src="/assets/monsters/communication.png" alt="" width="249" height="205" loading="lazy" aria-hidden="true" />
+              <span class="note rotate-right">I'm always happy to talk about technical communication!</span>
+            </aside>
           </div>
         </section>
 
-        <section>
-          <div class="section-heading">
+        <section class="decorated-section art-publications">
+          <div class="section-heading section-title-row">
             <h2>Selected publications</h2>
             <a class="all-papers-link" href="/publications/">All papers</a>
+            <img class="section-art" src="/assets/monsters/publications.png" alt="" width="223" height="183" loading="lazy" aria-hidden="true" />
           </div>
           <div class="row">
             <ol class="publication-list" id="selected-publications"></ol>
           </div>
         </section>
 
-        <section>
-          <h2>Software</h2>
+        <section class="decorated-section art-software">
+          <div class="section-title-row">
+            <h2>Software</h2>
+            <img class="section-art" src="/assets/monsters/software.png" alt="" width="230" height="181" loading="lazy" aria-hidden="true" />
+          </div>
           <div class="row">
             <ul class="project-list">
               <li><a href="https://github.com/mit-pdos/perennial">perennial</a><span>a system for verifying Go programs with concurrency</span></li>
@@ -72,8 +83,11 @@
           </div>
         </section>
 
-        <section>
-          <h2>Teaching</h2>
+        <section class="decorated-section art-teaching">
+          <div class="section-title-row">
+            <h2>Teaching</h2>
+            <img class="section-art" src="/assets/monsters/teaching.png" alt="" width="281" height="226" loading="lazy" aria-hidden="true" />
+          </div>
           <div class="row">
             <div class="copy teaching">
               <ul>
@@ -89,13 +103,28 @@
           </div>
         </section>
 
-        <section>
-          <h2>Service</h2>
+        <section class="decorated-section art-service">
+          <div class="section-title-row">
+            <h2>Service</h2>
+            <img class="section-art" src="/assets/monsters/service.png" alt="" width="163" height="155" loading="lazy" aria-hidden="true" />
+          </div>
           <div class="row service-row">
             <div class="service-links">
               <a href="https://sigops.org/s/conferences/sosp/2026/organizers.html">SOSP 2026 PC</a><a href="https://icfp26.sigplan.org/">ICFP 2026 PC</a><a href="https://popl26.sigplan.org/home/prisc-2026">PriSC 2026 PC</a><a href="https://popl25.sigplan.org/home/dafny-2025">Dafny 2025 PC</a><a href="https://pldi24.sigplan.org/track/pldi-2024-papers">PLDI 2024 PC</a><a href="https://sysdw23.github.io/">SySDW 2023 PC</a><a href="https://2023.ecoop.org/track/ecoop-2023-papers">ECOOP 2023 ERC</a><a href="https://popl23.sigplan.org/committee/CPP-2023-papers-program-committee">CPP 2023 PC</a><a href="https://popl23.sigplan.org/committee/POPL-2023-popl-research-papers-program-committee">POPL 2023 PC</a><a href="https://pldi22.sigplan.org/committee/pldi-2022-pldi-program-committee">PLDI 2022 PC</a><a href="https://popl22.sigplan.org/committee/POPL-2022-artifact-evaluation-artifact-evaluation-comittee">POPL 2022 AEC</a><a href="https://eurodw21.github.io/">EuroDW 2021 PC</a><a href="https://popl21.sigplan.org/track/POPL-2021-Artifact-Evaluation">POPL 2021 AEC</a><a href="https://pldi20.sigplan.org/track/pldi-2020-PLDI-Research-Artifacts">PLDI 2020 AEC</a><a href="https://popl20.sigplan.org/track/POPL-2020-Artifact-Evaluation">POPL 2020 AEC</a><a href="https://sysartifacts.github.io/">SOSP 2019 AEC</a>
             </div>
             <aside class="note rotate-left">I've reviewed a few papers</aside>
+          </div>
+        </section>
+
+        <section class="coffee-section">
+          <h2>Coffee</h2>
+          <div class="coffee-row">
+            <div class="coffee-art" aria-hidden="true">
+              <img class="coffee-pourover" src="/assets/monsters/coffee-pourover.png" alt="" width="353" height="358" loading="lazy" />
+              <img class="coffee-espresso" src="/assets/monsters/coffee-espresso.png" alt="" width="358" height="263" loading="lazy" />
+              <img class="coffee-table" src="/assets/monsters/coffee-table.png" alt="" width="175" height="215" loading="lazy" />
+            </div>
+            <aside class="note rotate-right">I'm really into coffee</aside>
           </div>
         </section>
 

@@ -45,8 +45,18 @@ h1 { display: inline-block; position: relative; margin: 0 0 .6rem; font: 600 cla
 .rotate-right { transform: rotate(.8deg); }
 section { padding-top: 3.5rem; }
 h2 { position: relative; display: inline-block; margin: 0 0 1.4rem; color: #7b2f2a; font: 600 1.8rem/1.1 Caveat, cursive; letter-spacing: .01em; }
-.section-heading { display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: baseline; margin-bottom: 1.4rem; }
-.section-heading h2 { margin: 0; }
+.decorated-section { padding-top: 5rem; }
+.section-title-row { position: relative; display: flex; gap: 1.25rem; align-items: baseline; margin-bottom: 1.4rem; }
+.section-title-row h2 { margin: 0; }
+.section-title-row > :not(.section-art) { position: relative; z-index: 1; }
+.section-heading { flex-wrap: wrap; }
+.section-art { position: absolute; z-index: 0; height: auto; opacity: .9; pointer-events: none; user-select: none; }
+.art-research { padding-top: 6rem; }
+.art-research .section-art { bottom: -.9rem; left: 12rem; width: 8.5rem; transform: rotate(2.5deg); }
+.art-publications .section-art { right: 6rem; bottom: -1.05rem; width: 7rem; transform: rotate(-4deg); }
+.art-software .section-art { right: 2.5rem; bottom: -1.25rem; width: 8rem; transform: rotate(2deg); }
+.art-teaching .section-art { bottom: -1rem; left: 11rem; width: 8.5rem; transform: rotate(-2.5deg); }
+.art-service .section-art { right: 10rem; bottom: -1.25rem; width: 5.5rem; transform: rotate(3.5deg); }
 .all-papers-link { color: #3c5a72; font: .75rem "IBM Plex Mono", monospace; letter-spacing: .06em; text-decoration: underline; text-decoration-color: rgba(60, 90, 114, .35); text-underline-offset: .2em; }
 .all-papers-link:hover { color: #7b2f2a; text-decoration-color: rgba(123, 47, 42, .6); }
 .outline-button { padding: .45rem .8rem; border: 1px solid rgba(27, 42, 58, .28); border-radius: 2px; background: transparent; font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
@@ -69,6 +79,16 @@ h2 { position: relative; display: inline-block; margin: 0 0 1.4rem; color: #7b2f
 .teaching ul { display: flex; flex-direction: column; gap: .6rem; margin: 0 0 1.2rem; padding: 0; font-size: 1.05rem; line-height: 1.5; list-style: none; }
 .teaching strong { font-weight: 600; }
 .teaching p { color: #4a5c6c; font-size: 1.05rem; line-height: 1.6; }
+.communication-note { display: flex; flex: 0 1 15rem; min-width: 12rem; flex-direction: column; align-items: center; gap: .25rem; margin-top: -1rem; }
+.communication-note img { width: 8.5rem; max-width: 100%; height: auto; transform: rotate(-1.8deg); }
+.communication-note .note { min-width: 0; margin-left: 0; }
+.coffee-row { display: flex; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; flex-wrap: wrap; }
+.coffee-row .note { margin-top: 1rem; }
+.coffee-art { display: grid; flex: 1 1 34rem; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; gap: clamp(1rem, 3vw, 2rem); min-width: 0; }
+.coffee-art img { display: block; justify-self: center; max-width: 100%; height: auto; opacity: .9; }
+.coffee-art .coffee-pourover { width: 9.5rem; transform: rotate(-2deg) translateY(.3rem); }
+.coffee-art .coffee-espresso { width: 11rem; transform: rotate(1.5deg) translateY(-.4rem); }
+.coffee-art .coffee-table { width: 7.25rem; transform: rotate(-2.5deg) translateY(.2rem); }
 .muted { color: #6a7986; }
 .service-links { display: flex; flex: 1 1 30rem; max-width: 44rem; min-width: 0; gap: .45rem .75rem; flex-wrap: wrap; color: #4a5c6c; font-size: .8rem; }
 footer { display: flex; gap: 1rem; align-items: baseline; justify-content: space-between; flex-wrap: wrap; margin-top: 4.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(27, 42, 58, .14); color: #6a7986; font-size: .75rem; letter-spacing: .05em; }
@@ -112,4 +132,22 @@ dialog[open] { animation: fade-up .18s ease-out; }
   .papers-tools { flex-direction: column; }
   .paper-search-wrap { flex-basis: auto; width: 100%; }
   section { padding-top: 3rem; }
+  .decorated-section { padding-top: 4.5rem; }
+  .section-art { opacity: .82; }
+  .art-research { padding-top: 5.5rem; }
+  .art-research .section-art { right: .25rem; left: auto; width: 6.5rem; }
+  .art-publications .section-art { right: 0; width: 5.5rem; }
+  .art-software .section-art { right: .25rem; width: 6.5rem; }
+  .art-teaching .section-art { right: .5rem; left: auto; width: 6.75rem; }
+  .art-service .section-art { right: 1rem; width: 4.5rem; }
+  .communication-note { flex-basis: 100%; margin-top: 0; align-items: flex-start; }
+  .communication-note img { width: 7rem; margin-left: clamp(1rem, 8vw, 3rem); }
+  .coffee-art { flex-basis: 100%; gap: clamp(.5rem, 3vw, 1rem); }
+  .coffee-row .note { margin-top: 0; }
+  .coffee-art .coffee-pourover { width: 6rem; }
+  .coffee-art .coffee-espresso { width: 6.75rem; }
+  .coffee-art .coffee-table { width: 4.5rem; }
+}
+@media (min-width: 84rem) {
+  .art-software .section-art { right: auto; bottom: -4.5rem; left: -9.5rem; width: 8.5rem; transform: rotate(-3deg); }
 }
