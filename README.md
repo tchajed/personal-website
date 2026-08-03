@@ -15,4 +15,4 @@ bun run dev
 bun run build
 ```
 
-Vite writes the production site to `dist/`. For Cloudflare Pages, use `bun run build` as the build command and `dist` as the output directory.
+Vite writes the production site to `dist/`. For Cloudflare Pages, use `bun install --frozen-lockfile && bun run build` as the build command and `dist` as the output directory.

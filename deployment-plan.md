@@ -48,7 +48,7 @@ In the Cloudflare dashboard:
    | Project name | `personal-website` (or another available name) |
    | Production branch | `main` |
    | Framework preset | `Vite` |
-   | Build command | `bun run build` |
+   | Build command | `bun install --frozen-lockfile && bun run build` |
    | Build output directory | `dist` |
    | Root directory | `/` |
 
