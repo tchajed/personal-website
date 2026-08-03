@@ -136,7 +136,7 @@ dialog[open] { animation: fade-up .18s ease-out; }
   .section-art { opacity: .82; }
   .art-research { padding-top: 5.5rem; }
   .art-research .section-art { right: .25rem; left: auto; width: 6.5rem; }
-  .art-publications .section-art { right: 0; width: 5.5rem; }
+  .art-publications .section-art { top: -4.25rem; right: 0; bottom: auto; width: 5.5rem; }
   .art-software .section-art { right: .25rem; width: 6.5rem; }
   .art-teaching .section-art { right: .5rem; left: auto; width: 6.75rem; }
   .art-service .section-art { right: 1rem; width: 4.5rem; }
